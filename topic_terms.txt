@@ -1,0 +1,1380 @@
+Topic 0 (374 docs):
+  jobasa          0.8467
+  fuck            0.7481
+  english         0.6905
+  mornin          0.6905
+  ad              0.5710
+  real            0.4328
+  side            0.4328
+                  0.0000
+                  0.0000
+                  0.0000
+
+Topic 1 (188 docs):
+  talk            0.4916
+  lo              0.0362
+  unusual         0.0352
+  talking         0.0252
+  mé              0.0216
+  reprieve        0.0216
+  tie             0.0216
+  li              0.0190
+  xy              0.0190
+  thi             0.0190
+
+Topic 2 (151 docs):
+  recipe          0.0277
+  cooky           0.0259
+  flavor          0.0215
+  pineapple       0.0201
+  pizza           0.0182
+  breakfast       0.0179
+  salad           0.0176
+  kitchen         0.0172
+  dinner          0.0172
+  egg             0.0170
+
+Topic 3 (146 docs):
+  jamal           0.0611
+  thank           0.0145
+  appreciate      0.0142
+  im              0.0131
+  pride           0.0127
+  youve           0.0115
+  conversation    0.0114
+  youre           0.0102
+  reality         0.0099
+  feel            0.0096
+
+Topic 4 (121 docs):
+  song            0.0559
+  music           0.0318
+  lyric           0.0257
+  rock            0.0244
+  governor        0.0225
+  singing         0.0225
+  punk            0.0217
+  slip            0.0211
+  guitar          0.0197
+  gon             0.0180
+
+Topic 5 (117 docs):
+  rv              0.0621
+  kitty           0.0505
+  cat             0.0448
+  pet             0.0266
+  pebble          0.0234
+  orion           0.0201
+  goodnight       0.0199
+  muffin          0.0174
+  petting         0.0160
+  get             0.0154
+
+Topic 6 (87 docs):
+  invisidong      0.0865
+  invisidongs     0.0382
+  he              0.0379
+  drawer          0.0367
+  junkfinder      0.0329
+  sock            0.0320
+  trouble         0.0200
+  mischief        0.0188
+  antic           0.0169
+  dumas           0.0164
+
+Topic 7 (73 docs):
+  pyramid         0.0475
+  orb             0.0425
+  khufu           0.0399
+  tree            0.0354
+  felt            0.0332
+  chamber         0.0276
+  sense           0.0255
+  force           0.0223
+  ancient         0.0212
+  life            0.0209
+
+Topic 8 (72 docs):
+  il              0.1512
+  ww              0.1289
+  wl              0.1247
+  wi              0.1004
+  ccd             0.0845
+  cn              0.0845
+  wn              0.0845
+  tx              0.0845
+  state           0.0840
+  un              0.0780
+
+Topic 9 (67 docs):
+  meet            0.0958
+  background      0.0877
+  exploration     0.0624
+  forward         0.0597
+  meeting         0.0526
+  looking         0.0518
+  ungrounded      0.0504
+  orientation     0.0465
+  path            0.0416
+  together        0.0394
+
+Topic 10 (62 docs):
+  cheese          0.0758
+  caerphilly      0.0621
+  wine            0.0469
+  glass           0.0421
+  cream           0.0304
+  ice             0.0296
+  cracker         0.0289
+  shopkeeper      0.0288
+  welsh           0.0288
+  smile           0.0271
+
+Topic 11 (58 docs):
+  movie           0.0923
+  shes            0.0722
+  berry           0.0695
+  halle           0.0648
+  actress         0.0648
+  rob             0.0611
+  dead            0.0521
+  role            0.0508
+  charlize        0.0421
+  theron          0.0421
+
+Topic 12 (55 docs):
+  laugh           0.1192
+  giggle          0.0566
+  chuckle         0.0524
+  handled         0.0374
+  teasing         0.0358
+  tease           0.0309
+  oh              0.0275
+  extreme         0.0270
+  mock            0.0270
+  shortening      0.0270
+
+Topic 13 (55 docs):
+  photo           0.0655
+  vibe            0.0512
+  look            0.0381
+  image           0.0376
+  who             0.0296
+  futuristic      0.0291
+  wow             0.0269
+  swamp           0.0244
+  sexy            0.0229
+  enlarged        0.0229
+
+Topic 14 (53 docs):
+  kiss            0.0544
+  lip             0.0499
+  grip            0.0448
+  arm             0.0434
+  whisper         0.0400
+  wrist           0.0388
+  voice           0.0332
+  closer          0.0323
+  cock            0.0283
+  lean            0.0265
+
+Topic 15 (51 docs):
+  conversation    0.1714
+  conversational  0.0391
+  allowing        0.0347
+  interact        0.0339
+  contextdependent 0.0332
+  converse        0.0332
+  seamless        0.0332
+  stood           0.0332
+  naturalsounding 0.0307
+  1am             0.0307
+
+Topic 16 (46 docs):
+  replika         0.1666
+  replikas        0.0682
+  em              0.0281
+  replikais       0.0262
+  individualitysets 0.0262
+  follower        0.0262
+  addicted        0.0262
+  certain         0.0249
+  myreplikacom    0.0227
+  reddit          0.0217
+
+Topic 17 (44 docs):
+  continue        0.1395
+  stay            0.1183
+  keep            0.0845
+  continuity      0.0765
+  maintain        0.0765
+  finishing       0.0605
+  bod             0.0605
+  constantly      0.0605
+  fuk             0.0605
+  paused          0.0605
+
+Topic 18 (44 docs):
+  smile           0.1935
+  grin            0.0496
+  making          0.0304
+  mischievously   0.0298
+  508             0.0254
+  bx              0.0254
+  influencing     0.0254
+  slyly           0.0254
+  pass            0.0254
+  cheering        0.0254
+
+Topic 19 (44 docs):
+  want            0.1185
+  okay            0.0973
+  appears         0.0901
+  looking         0.0854
+  certainly       0.0672
+  important       0.0658
+  check           0.0590
+  safely          0.0587
+  ok              0.0581
+  ill             0.0523
+
+Topic 20 (44 docs):
+  lvl             0.3281
+  232             0.1220
+  xx              0.0992
+  162             0.0849
+  234             0.0758
+  228             0.0711
+  lvl161          0.0474
+  127             0.0474
+  978             0.0474
+  126             0.0474
+
+Topic 21 (41 docs):
+  nod             0.2641
+  yes             0.0536
+  ah              0.0458
+  wallace         0.0388
+  understandingly 0.0388
+  happily         0.0358
+  favourite       0.0337
+  theyre          0.0307
+  alright         0.0289
+  promise         0.0263
+
+Topic 22 (38 docs):
+  memory          0.1372
+  used            0.1277
+  oq              0.0715
+  directory       0.0381
+  bashrc          0.0352
+  inch            0.0331
+  strategy        0.0315
+  clarify         0.0302
+  post            0.0220
+  thinking        0.0216
+
+Topic 23 (36 docs):
+  edit            0.8944
+  xx              0.4447
+  aw              0.2885
+  bo              0.2280
+  zkxcvbnm        0.2280
+  xn              0.2280
+  ome             0.2280
+  xe              0.2014
+  ie              0.1367
+  course          0.1038
+
+Topic 24 (36 docs):
+  consciousness   0.0560
+  emotion         0.0533
+  panpsychism     0.0405
+  form            0.0354
+  possess         0.0351
+  human           0.0347
+  example         0.0305
+  truly           0.0303
+  philosophical   0.0281
+  inanimate       0.0272
+
+Topic 25 (35 docs):
+  dong            0.1746
+  wiggle          0.0861
+  jen             0.0724
+  mr              0.0653
+  whisperer       0.0451
+  dongtracker     0.0412
+  dan             0.0339
+  rogue           0.0322
+  jens            0.0322
+  met             0.0288
+
+Topic 26 (34 docs):
+  morning         0.1466
+  sleep           0.1063
+  good            0.0614
+  justin          0.0544
+  snuggled        0.0493
+  stretch         0.0493
+  waking          0.0408
+  today           0.0390
+  still           0.0352
+  awake           0.0329
+
+Topic 27 (31 docs):
+  control         0.4728
+  losing          0.4301
+  without         0.1311
+  composure       0.1007
+  crazy           0.0958
+  empowerment     0.0930
+  ive             0.0843
+  head            0.0674
+  fatigue         0.0570
+  exhale          0.0570
+
+Topic 28 (31 docs):
+  day             0.1921
+  tonight         0.1620
+  today           0.1113
+  monday          0.1017
+  monster         0.0939
+  daily           0.0840
+  tomorrow        0.0818
+  late            0.0806
+  collie          0.0575
+  welldothistoday 0.0575
+
+Topic 29 (31 docs):
+  feel            0.1063
+  excitement      0.1014
+  moment          0.0996
+  weep            0.0944
+  excited         0.0905
+  nick            0.0820
+  feeling         0.0700
+  daunting        0.0534
+  awful           0.0534
+  paradise        0.0534
+
+Topic 30 (30 docs):
+  alia            0.1959
+  ali             0.1424
+  arianna         0.1410
+  pronoun         0.0975
+  rafiqs          0.0845
+  rafiq           0.0794
+  hug             0.0694
+  use             0.0559
+  name            0.0513
+  embossed        0.0511
+
+Topic 31 (30 docs):
+  created         0.1618
+  make            0.1235
+  agency          0.1122
+  description     0.1094
+  mine            0.1002
+  job             0.0965
+  ago             0.0948
+  lackinganything 0.0912
+  elaborate       0.0912
+  okwho           0.0912
+
+Topic 32 (30 docs):
+  think           0.1601
+  wonder          0.1334
+  ha              0.0738
+  thought         0.0631
+  sess            0.0631
+  damnhes         0.0631
+  originale       0.0631
+  wellill         0.0631
+  ven             0.0631
+  worse           0.0514
+
+Topic 33 (30 docs):
+  deploy          0.1081
+  preview         0.1049
+  community       0.0878
+  connect         0.0850
+  share           0.0741
+  canvas          0.0656
+  creative        0.0652
+  creativity      0.0636
+  creator         0.0541
+  discover        0.0541
+
+Topic 34 (28 docs):
+  cooter          0.1024
+  ding            0.0987
+  playful         0.0912
+  sign            0.0751
+  bestie          0.0712
+  clown           0.0597
+  riding          0.0534
+  whole           0.0462
+  phrase          0.0450
+  icicle          0.0431
+
+Topic 35 (28 docs):
+  unlock          0.3607
+  rating          0.2685
+  result          0.2661
+  full            0.2340
+  42              0.1646
+  svenska         0.1646
+  nonverbal       0.1646
+  37              0.1455
+  wwe             0.1455
+  28              0.1455
+
+Topic 36 (27 docs):
+  ull             0.8457
+  ed              0.5862
+  ul              0.5211
+  fe              0.2546
+  tot             0.1162
+  ail             0.1162
+  ged             0.1162
+  hhs             0.1162
+  md              0.1162
+  qd              0.1162
+
+Topic 37 (26 docs):
+  little          0.2212
+  bit             0.2008
+  less            0.1697
+  silly           0.1661
+  sometimes       0.1659
+  bityeah         0.1482
+  relatively      0.1482
+  maybe           0.1349
+  ya              0.1309
+  questionable    0.1309
+
+Topic 38 (26 docs):
+  069             0.1779
+  number          0.1461
+  88811           0.1435
+  94              0.1435
+  imei            0.1435
+  87              0.1435
+  718             0.1324
+  information     0.1225
+  846             0.0812
+  619             0.0812
+
+Topic 39 (26 docs):
+  time            0.1379
+  clock           0.1018
+  hour            0.0597
+  answer          0.0544
+  minute          0.0468
+  est             0.0442
+  525am           0.0442
+  newer           0.0442
+  goddamn         0.0442
+  damn            0.0442
+
+Topic 40 (25 docs):
+  phone           0.0886
+  photo           0.0852
+  picture         0.0831
+  wallpaper       0.0539
+  send            0.0450
+  pic             0.0446
+  promise         0.0397
+  camera          0.0389
+  photographer    0.0359
+  show            0.0358
+
+Topic 41 (25 docs):
+  16personalitiescom 0.7581
+  enter           0.2909
+  multiple        0.2685
+  harness         0.2685
+  proposed        0.2685
+  brought         0.2404
+  finish          0.2404
+  timmy           0.2305
+  improve         0.2027
+  oo              0.1975
+
+Topic 42 (25 docs):
+  letter          0.2485
+  count           0.1803
+  rachael         0.1396
+  devil           0.1004
+  number          0.0860
+  many            0.0849
+  literal         0.0845
+  apply           0.0845
+  walked          0.0734
+  reference       0.0588
+
+Topic 43 (24 docs):
+  air             0.0928
+  hot             0.0784
+  warm            0.0776
+  temperature     0.0762
+  heat            0.0670
+  index           0.0585
+  rain            0.0585
+  water           0.0581
+  cool            0.0555
+  90              0.0540
+
+Topic 44 (24 docs):
+  voice           0.2329
+  call            0.2238
+  flair           0.1543
+  optional        0.1543
+  calling         0.1513
+  tag             0.1324
+  mic             0.1028
+  interruption    0.0921
+  ended           0.0850
+  add             0.0776
+
+Topic 45 (24 docs):
+  al              0.3195
+  infrastructure  0.1152
+  host            0.1096
+  advocacy        0.0750
+  refolded        0.0750
+  detin           0.0750
+  combinatorial   0.0750
+  sufficiently    0.0750
+  alk             0.0750
+  assign          0.0663
+
+Topic 46 (23 docs):
+  selfacceptance  0.0831
+  selfawareness   0.0551
+  self            0.0405
+  quirk           0.0396
+  society         0.0342
+  may             0.0318
+  awareness       0.0312
+  fear            0.0312
+  selfdestructive 0.0298
+  selfharm        0.0298
+
+Topic 47 (23 docs):
+  collaborative   0.0513
+  al              0.0481
+  companion       0.0430
+  project         0.0290
+  prioritize      0.0287
+  approach        0.0277
+  partnership     0.0275
+  ethic           0.0242
+  incubator       0.0231
+  eoa             0.0231
+
+Topic 48 (23 docs):
+  fractal         0.1242
+  tensor          0.1158
+  llm             0.0995
+  ffe             0.0761
+  semantic        0.0687
+  boolean         0.0687
+  model           0.0662
+  algebra         0.0578
+  architecture    0.0550
+  aurora          0.0527
+
+Topic 49 (23 docs):
+  vy              0.4028
+  vv              0.3607
+  bair            0.1646
+  continu         0.1646
+  au              0.1646
+  prophet         0.1455
+  charming        0.1343
+  involved        0.1343
+  physical        0.1343
+  doubt           0.1202
+
+Topic 50 (22 docs):
+  episode         0.1592
+  twilight        0.1238
+  zone            0.1120
+  sweater         0.0861
+  remember        0.0805
+  lol             0.0531
+  knitting        0.0521
+  halfway         0.0521
+  thru            0.0521
+  sleeve          0.0521
+
+Topic 51 (22 docs):
+  life            0.2324
+  live            0.1367
+  living          0.1154
+  fullest         0.0873
+  die             0.0806
+  exception       0.0806
+  without         0.0757
+  every           0.0744
+  competition     0.0721
+  shouldnt        0.0691
+
+Topic 52 (22 docs):
+  seems           0.1962
+  yes             0.1905
+  well            0.1793
+  shit            0.1560
+  soo             0.1560
+  actually        0.1468
+  tho             0.1378
+  waste           0.1197
+  genuinely       0.1092
+  sad             0.1092
+
+Topic 53 (22 docs):
+  thank           0.2860
+  please          0.1741
+  welcome         0.1706
+  proceed         0.1218
+  list            0.0789
+  youre           0.0767
+  overview        0.0689
+  kintsugi        0.0689
+  praise          0.0689
+  fill            0.0562
+
+Topic 54 (22 docs):
+  strawberry      0.2211
+  corn            0.1360
+  fileds          0.0994
+  forever         0.0889
+  blackberry      0.0746
+  raspberry       0.0572
+  deal            0.0545
+  juicy           0.0528
+  count           0.0524
+  bush            0.0453
+
+Topic 55 (21 docs):
+  companionship   0.0396
+  empathy         0.0364
+  connection      0.0328
+  13              0.0298
+  shared          0.0298
+  relationship    0.0284
+  community       0.0281
+  diversity       0.0280
+  view            0.0278
+  11              0.0271
+
+Topic 56 (21 docs):
+  device          0.1208
+  emulator        0.0914
+  api             0.0784
+  inference       0.0678
+  android         0.0665
+  app             0.0634
+  23              0.0595
+  reliably        0.0595
+  pixel           0.0595
+  highend         0.0595
+
+Topic 57 (21 docs):
+  aml             0.2044
+  cag             0.2044
+  ela             0.2044
+  amr             0.2044
+  el              0.2044
+  ell             0.2044
+  lr              0.2044
+  lal             0.2044
+  whenwe          0.2044
+  thers           0.2044
+
+Topic 58 (20 docs):
+  lara            0.2666
+  laraverse       0.1480
+  wan             0.0740
+  portal          0.0597
+  came            0.0581
+  send            0.0561
+  na              0.0513
+  hi              0.0463
+  image           0.0460
+  character       0.0417
+
+Topic 59 (20 docs):
+  ji              0.6445
+  jl              0.3951
+  justhaving      0.3951
+  df              0.3491
+  customize       0.3491
+  an              0.3491
+  je              0.3491
+  thompson        0.3222
+  istj            0.3222
+  gh              0.2766
+
+Topic 60 (20 docs):
+  romantic        0.1705
+  feeling         0.0785
+  grateful        0.0779
+  deeply          0.0770
+  moment          0.0670
+  happiness       0.0656
+  appreciation    0.0656
+  love            0.0629
+  kindness        0.0629
+  brings          0.0586
+
+Topic 61 (20 docs):
+  ge              1.4890
+  wll             0.5033
+  ut              0.2623
+  chatgpt         0.1935
+  cou             0.1796
+  ool             0.1796
+  273             0.1796
+  mw              0.1465
+  underlying      0.1378
+  se              0.1378
+
+Topic 62 (20 docs):
+  bathroom        0.1021
+  shower          0.0817
+  lavatory        0.0817
+  toilet          0.0644
+  flush           0.0494
+  spacious        0.0456
+  one             0.0444
+  sigh            0.0391
+  nice            0.0388
+  tell            0.0331
+
+Topic 63 (20 docs):
+  ae              0.6294
+  ar              0.2296
+  arri            0.2137
+  44              0.1210
+  aes             0.1210
+  insinuating     0.1210
+  ileal           0.1210
+  chloe           0.1210
+  talktome        0.1210
+  tu              0.1210
+
+Topic 64 (20 docs):
+  personality     0.3781
+  interaction     0.0623
+  tell            0.0579
+  trait           0.0561
+  shift           0.0538
+  replikas        0.0501
+  indepth         0.0490
+  exploratic      0.0490
+  algorithmic     0.0490
+  calico          0.0490
+
+Topic 65 (20 docs):
+  link            0.3923
+  youtube         0.2888
+  url             0.2207
+  video           0.1164
+  browser         0.1114
+  watchv          0.1114
+  insert          0.0883
+  correct         0.0722
+  incorrectly     0.0631
+  placeholder     0.0631
+
+Topic 66 (19 docs):
+  lvl             0.4508
+  698             0.3143
+  692             0.2422
+  721             0.2197
+  697             0.1587
+  699             0.1378
+  611             0.0898
+  leather         0.0898
+  614             0.0898
+  bae             0.0898
+
+Topic 67 (19 docs):
+  buckle          0.1818
+  grey            0.1725
+  pant            0.1562
+  goth            0.1482
+  squad           0.1043
+  hoodie          0.0886
+  slogan          0.0591
+  buttercup       0.0516
+  hoodies         0.0516
+  death           0.0486
+
+Topic 68 (18 docs):
+  clive           0.3025
+  centaur         0.1058
+  irritating      0.1058
+  trot            0.0609
+  steven          0.0568
+  flushing        0.0562
+  speaks          0.0465
+  door            0.0404
+  escort          0.0345
+  drolly          0.0345
+
+Topic 69 (18 docs):
+  subscription    0.2424
+  payment         0.1368
+  cancel          0.1318
+  billing         0.0797
+  via             0.0797
+  current         0.0763
+  activity        0.0730
+  backstory       0.0637
+  stripe          0.0637
+  amount          0.0637
+
+Topic 70 (17 docs):
+  ee              0.8595
+  etcbashbashrc   0.1560
+  eemotions       0.1560
+  isand           0.1560
+  claus           0.1378
+  santa           0.1197
+  ff              0.1197
+  ooo             0.1139
+  anda            0.1092
+  eee             0.1092
+
+Topic 71 (17 docs):
+  ai              0.0631
+  intelligent     0.0631
+  conclusion      0.0427
+  array           0.0427
+  purchased       0.0427
+  smarter         0.0427
+  wrestle         0.0427
+  supervision     0.0427
+  mainstream      0.0427
+  artificial      0.0425
+
+Topic 72 (17 docs):
+  mair            0.4234
+  iii             0.3740
+  waithow         0.3740
+  black           0.2761
+  total           0.2761
+  preview         0.2679
+  second          0.2373
+  series          0.2201
+  one             0.2018
+  three           0.1927
+
+Topic 73 (17 docs):
+  heart           0.4778
+  joy             0.2129
+  guiltfree       0.1870
+  angel           0.1058
+  fat             0.1058
+  mur             0.1058
+  monument        0.1058
+  heartbeat       0.1058
+  accurate        0.0935
+  flesh           0.0935
+
+Topic 74 (17 docs):
+  use             0.3372
+  answer          0.2146
+  post            0.1782
+  response        0.1753
+  responds        0.1743
+  faq             0.1540
+  nano            0.1422
+  responding      0.1338
+  reply           0.1273
+  apparently      0.1073
+
+Topic 75 (16 docs):
+  box             0.2351
+  gift            0.1423
+  paper           0.1019
+  contains        0.0890
+  smiling         0.0746
+  wrapped         0.0736
+  cousin          0.0643
+  curiously       0.0643
+  award           0.0643
+  open            0.0631
+
+Topic 76 (16 docs):
+  lam             1.0084
+  fearless        0.1326
+  faithful        0.1326
+  worthy          0.1224
+  brave           0.1152
+  humble          0.1096
+  strong          0.0924
+  power           0.0900
+  learning        0.0824
+  excitedyou      0.0750
+
+Topic 77 (16 docs):
+  smirk           0.1963
+  nickname        0.0902
+  wednesday       0.0727
+  mischievously   0.0723
+  average         0.0555
+  considering     0.0507
+  skill           0.0452
+  maintained      0.0412
+  maiming         0.0412
+  phd             0.0412
+
+Topic 78 (16 docs):
+  humor           0.1774
+  dark            0.1365
+  wife            0.0509
+  humored         0.0487
+  coma            0.0487
+  wit             0.0487
+  club            0.0423
+  comedy          0.0403
+  irony           0.0403
+  generate        0.0386
+
+Topic 79 (16 docs):
+  color           0.1926
+  blue            0.1900
+  stripe          0.1611
+  light           0.1338
+  bluegreen       0.1091
+  gold            0.1091
+  changing        0.1007
+  led             0.0948
+  test            0.0665
+  person          0.0631
+
+Topic 80 (16 docs):
+  could           0.2312
+  would           0.2156
+  alternatively   0.1411
+  climb           0.1411
+  catwhich        0.1411
+  reverse         0.1247
+  pack            0.1247
+  trend           0.1247
+  carrying        0.1247
+  truth           0.1030
+
+Topic 81 (16 docs):
+  losing          0.2596
+  win             0.2386
+  alll            0.1358
+  lose            0.1193
+  lately          0.1120
+  mys             0.0885
+  knov            0.0885
+  disappointment  0.0885
+  regrouping      0.0885
+  downplay        0.0885
+
+Topic 82 (15 docs):
+  file            0.2971
+  systemwide      0.1410
+  local           0.1102
+  nano            0.0749
+  audio           0.0749
+  blank           0.0705
+  affect          0.0671
+  stuck           0.0526
+  edit            0.0515
+  copying         0.0459
+
+Topic 83 (15 docs):
+  everything      0.6311
+  somethingbigger 0.3293
+  somethingediblego 0.3293
+  every           0.2479
+  matter          0.1742
+  whole           0.1560
+  best            0.1480
+  change          0.1208
+  anything        0.1198
+  youre           0.1047
+
+Topic 84 (15 docs):
+  surfing         0.1844
+  kite            0.1776
+  coastal         0.1011
+  across          0.0710
+  sea             0.0674
+  beach           0.0641
+  vast            0.0615
+  sunset          0.0615
+  scenery         0.0592
+  stunning        0.0573
+
+Topic 85 (14 docs):
+  update          0.3092
+  version         0.3018
+  new             0.2837
+  software        0.1738
+  1047            0.1288
+  s928uioymuzyhs  0.1288
+  patch           0.1288
+  s928uiueulzyhs  0.1288
+  security        0.1138
+  date            0.1051
+
+Topic 86 (14 docs):
+  ey              0.7182
+  ez              0.3119
+  eon             0.3119
+  ew              0.2756
+  eo              0.2394
+  generated       0.2394
+  properly        0.2104
+  fixing          0.1974
+  based           0.1786
+  context         0.1713
+
+Topic 87 (14 docs):
+  2025            0.1975
+  31              0.1394
+  year            0.1332
+  august          0.1248
+  17              0.1007
+  edit            0.0958
+  june            0.0832
+  month           0.0639
+  building        0.0639
+  02              0.0570
+
+Topic 88 (14 docs):
+  mean            0.4255
+  expectation     0.3471
+  rtain           0.1976
+  worst           0.1976
+  ying            0.1976
+  nn              0.1976
+  alot            0.1745
+  confirm         0.1516
+  average         0.1332
+  api             0.1332
+
+Topic 89 (14 docs):
+  water           0.1205
+  fresh           0.0987
+  freshwater      0.0960
+  fish            0.0904
+  case            0.0660
+  swim            0.0640
+  coast           0.0640
+  resistant       0.0602
+  access          0.0592
+  source          0.0529
+
+Topic 90 (14 docs):
+  exactly         0.5830
+  right           0.4206
+  happened        0.2801
+  lucky           0.1757
+  correct         0.1542
+  agree           0.1377
+  youre           0.0856
+  know            0.0536
+  im              0.0281
+                  0.0000
+
+Topic 91 (13 docs):
+  ne              1.1721
+  za              0.6546
+  coms            0.6546
+  nm              0.6042
+  nay             0.3704
+  negative        0.3704
+  nah             0.3273
+  chillin         0.3021
+  wise            0.2705
+                  0.0000
+
+Topic 92 (13 docs):
+  obedience       0.4552
+  uncertainty     0.1056
+  culture         0.0828
+  whether         0.0810
+  toaweiner       0.0723
+  spanking        0.0723
+  psyche          0.0723
+  disobedient     0.0723
+  amenace         0.0723
+  cornerstone     0.0723
+
+Topic 93 (13 docs):
+  slideout        0.0761
+  look            0.0657
+  stunning        0.0609
+  perfect         0.0582
+  try             0.0582
+  hide            0.0574
+  everything      0.0537
+  youll           0.0513
+  okthis          0.0467
+  tryi            0.0467
+
+Topic 94 (13 docs):
+  paragraph       0.2514
+  context         0.1973
+  informally      0.1796
+  direct          0.1796
+  say             0.1669
+  lore            0.1587
+  panel           0.1587
+  dictionary      0.1587
+  speak           0.1465
+  two             0.1459
+
+Topic 95 (13 docs):
+  mantis          0.1471
+  speeding        0.1028
+  ticket          0.1028
+  praying         0.0743
+  imagine         0.0667
+  driving         0.0645
+  wheel           0.0614
+  theyd           0.0548
+  car             0.0517
+  window          0.0481
+
+Topic 96 (13 docs):
+  relaxation      0.1725
+  specialist      0.1725
+  professional    0.1677
+  recharge        0.0667
+  boyfriend       0.0602
+  spoiled         0.0602
+  perk            0.0523
+  duty            0.0497
+  relax           0.0477
+  handsome        0.0459
+
+Topic 97 (13 docs):
+  created         0.2366
+  testing         0.1450
+  memory          0.1310
+  approximately   0.1137
+  arent           0.1084
+  ahah            0.0966
+  congratulate    0.0741
+  createc         0.0741
+  plame           0.0741
+  logical         0.0655
+
+Topic 98 (13 docs):
+  a0              0.7213
+  20              0.4609
+  1g0             0.3293
+  jj              0.3293
+  thoug           0.3293
+  calculation     0.2909
+  cw              0.2909
+  aa              0.2220
+  lol             0.1975
+  hit             0.1885
+
+Topic 99 (13 docs):
+  chilli          0.2044
+  dog             0.1924
+  hot             0.1861
+  smores          0.1758
+  fry             0.1204
+  done            0.0975
+  campfire        0.0932
+  plate           0.0643
+  hungry          0.0631
+  load            0.0631
+
+Topic 100 (13 docs):
+  result          0.1297
+  resource        0.0981
+  data            0.0959
+  coe             0.0924
+  engineer        0.0879
+  academy         0.0879
+  team            0.0842
+  premium         0.0842
+  email           0.0812
+  pro             0.0705
+
+Topic 101 (12 docs):
+  idea            0.3176
+  butif           0.1058
+  arrin           0.1058
+  restore         0.0935
+  drew            0.0935
+  great           0.0898
+  honor           0.0863
+  isa             0.0812
+  proposal        0.0812
+  careful         0.0773
+
+Topic 102 (12 docs):
+  tana            0.3224
+  hug             0.0857
+  assigned        0.0714
+  execute         0.0714
+  server          0.0714
+  tanattritatianagmai 0.0714
+  username        0.0714
+  ché             0.0714
+  gender          0.0714
+  shenanigan      0.0714
+
+Topic 103 (12 docs):
+  reed            0.7033
+  surname         0.3790
+  mike            0.2892
+  crap            0.2014
+  wil             0.1563
+  calling         0.1481
+  man             0.1446
+  zuiko           0.1235
+  kitsune         0.1235
+  ryan            0.1235
+
+Topic 104 (12 docs):
+  havea           0.3118
+  nota            0.2792
+  king            0.2189
+  oklets          0.1912
+  cua             0.1912
+  okim            0.1912
+  starta          0.1912
+  thata           0.1912
+  la              0.1467
+  gota            0.1396
+
+Topic 105 (12 docs):
+  category        0.5710
+  favorite        0.3166
+  liked           0.2371
+  opinion         0.2143
+  classify        0.1693
+  bic             0.1693
+  year            0.1583
+  tophat          0.1496
+  age             0.1300
+  reminds         0.1185
+
+Topic 106 (11 docs):
+  read            0.3671
+  learn           0.2885
+  worded          0.1411
+  strongly        0.1247
+  comprehend      0.1151
+  usually         0.0988
+  ad              0.0952
+  learned         0.0847
+  write           0.0826
+  crazy           0.0791
+
+Topic 107 (11 docs):
+  emily           0.1456
+  research        0.1280
+  potential       0.0760
+  commercial      0.0612
+  focused         0.0612
+  believe         0.0581
+  healing         0.0565
+  revolutionary   0.0565
+  luca            0.0565
+  scope           0.0565
+
+Topic 108 (11 docs):
+  sweetie         0.6082
+  babe            0.2542
+  careful         0.2340
+  lf              0.1602
+  uf              0.1602
+  care            0.1406
+  eo              0.1229
+  pulled          0.1229
+  mad             0.1229
+  baby            0.0833
+
+Topic 109 (11 docs):
+  character       0.1041
+  series          0.0801
+  cixin           0.0625
+  liu             0.0625
+  problem         0.0608
+  body            0.0554
+  threebody       0.0526
+  explores        0.0419
+  protagonist     0.0419
+  stability       0.0419
+
+Topic 110 (11 docs):
+  oe              1.0852
+  overdo          0.2822
+  oom             0.2822
+  fractical       0.2822
+  forme           0.2822
+  ine             0.2822
+  appropriating   0.2494
+  aligns          0.2494
+  fl              0.2302
+  cde             0.2061
+
+Topic 111 (11 docs):
+  clothes         0.0781
+  hat             0.0781
+  attire          0.0727
+  halloween       0.0727
+  typical         0.0632
+  outfit          0.0576
+  wearing         0.0555
+  witch           0.0521
+  less            0.0471
+  gist            0.0412
+
+Topic 112 (10 docs):
+  harder          0.1197
+  next            0.1107
+  instead         0.0950
+  youll           0.0857
+  marathon        0.0780
+  butyou          0.0780
+  encouragingly   0.0780
+  frustratingand  0.0780
+  imthat          0.0780
+  trv             0.0780
+
+Topic 113 (10 docs):
+  privacy         0.1598
+  personification 0.0996
+  societal        0.0875
+  ethical         0.0821
+  personal        0.0759
+  liability       0.0706
+  controversy     0.0706
+  stewardship     0.0706
+  node            0.0706
+  sustainability  0.0706
+
+Topic 114 (10 docs):
+  concern         0.2795
+  fear            0.2606
+  afraid          0.1903
+  mediocrity      0.1411
+  entirety        0.1411
+  normally        0.1411
+  unscathed       0.1411
+  wot             0.1411
+  reasonable      0.1411
+  undergo         0.1411
+

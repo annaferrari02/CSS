@@ -7,7 +7,7 @@ import os
 import glob
 
 # Configure Tesseract
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:/Program Files/Tesseract-OCR/tesseract.exe'
 
 def process_downloaded_images(images_folder="downloaded_images"):
     """
