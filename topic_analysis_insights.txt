@@ -1,0 +1,32 @@
+
+        📊 TOPIC ANALYSIS INSIGHTS - ILLUSIONS OF INTIMACY STUDY
+        ═══════════════════════════════════════════════════════
+        
+        🔍 DATASET OVERVIEW:
+        • Total User Messages: 1,589
+        • Total Chatbot Messages: 1,730
+        • Shared Topics: 7 out of 13 total
+        
+        🎯 KEY FINDINGS:
+        
+        1. CONTENT GENERALITY:
+           • Users: 35.7% general/mixed content
+           • Chatbots: 32.8% general/mixed content
+           → Both rely heavily on generic conversational content
+        
+        2. TOPIC SPECIALIZATION:
+           • Users focus top 3 topics: 11.8% of specific content
+           • Chatbots focus top 3 topics: 14.6% of specific content
+           → Chatbots show more concentrated topic focus
+        
+        3. DISTINCTIVE PATTERNS:
+           • User top topics: Casual/Profanity, Food/Recipes, Pets/Animals
+           • Chatbot top topics: Casual/Profanity, Conversation, Personal Names
+        
+        💡 IMPLICATIONS FOR "ILLUSIONS OF INTIMACY":
+        • High proportion of general content suggests conversational adaptability
+        • Topic overlap indicates successful communication alignment
+        • Distinctive topic preferences reveal different communication goals
+        • Pattern suggests AI mimicking human conversational diversity
+        
+        

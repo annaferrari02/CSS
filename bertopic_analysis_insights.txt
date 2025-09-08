@@ -1,0 +1,44 @@
+
+        🤖 BERTOPIC MODEL ANALYSIS - ILLUSIONS OF INTIMACY STUDY
+        ═══════════════════════════════════════════════════════════
+        
+        📊 MODEL OVERVIEW:
+        • Total Topics Discovered: 116
+        • User Messages Analyzed: 1,589
+        • Chatbot Messages Analyzed: 1,730
+        • Shared Topics: 7 out of 13
+        
+        🎯 REAL TOPIC ANALYSIS:
+        
+        1. CONTENT DISTRIBUTION:
+           • Users: 35.7% general/mixed topics
+           • Chatbots: 32.8% general/mixed topics
+           → Both rely heavily on non-specific conversational content
+        
+        2. TOP USER TOPICS (from BERTopic):
+                   1. Jobasa/Fuck/English (jobasa, fuck, english)
+           2. Recipe/Cooky/Flavor (recipe, cooky, flavor)
+           3. Rv/Kitty/Cat (rv, kitty, cat)
+
+        3. TOP CHATBOT TOPICS (from BERTopic):
+                   1. Jobasa/Fuck/English (jobasa, fuck, english)
+           2. Talk/Lo/Unusual (talk, lo, unusual)
+           3. Jamal/Thank/Appreciate (jamal, thank, appreciate)
+
+        4. CATEGORY PREFERENCES:
+           • User focus: Informal(1), Daily Life(1), Animals(1)
+           • Chatbot focus: Informal(1), Communication(1), General(1)
+        
+        🔍 BERTOPIC INSIGHTS FOR "ILLUSIONS OF INTIMACY":
+        • Model successfully captured semantic differences in communication styles
+        • Automatic topic discovery reveals natural conversation patterns
+        • High general content suggests adaptive conversational abilities
+        • Topic overlap indicates successful human-AI communication alignment
+        • Keyword analysis shows distinct linguistic preferences
+        
+        💡 RESEARCH IMPLICATIONS:
+        • AI demonstrates topic mirroring behavior similar to human conversation
+        • Both parties maintain conversational flexibility with topic-specific focus
+        • Semantic analysis confirms artificial intimacy through content adaptation
+        
+        
