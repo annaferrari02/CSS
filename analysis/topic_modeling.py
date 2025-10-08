@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer
 # Import from shared preprocessing module
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-from src.preprocessing.text_cleaner import clean_text, STOPWORDS, LEMMATIZER
+from text_cleaner import clean_text, STOPWORDS, LEMMATIZER
 
 
 def run_topic_modeling(data_path, output_dir=None):
@@ -111,11 +111,11 @@ def run_topic_modeling(data_path, output_dir=None):
 
 
 if __name__ == '__main__':
-    DATA_PATH = Path("data") / "human-ai-chatlogs.csv"
+    DATA_PATH = Path("data") / "human_ai_chatlogs.csv"
     
     # Fallback path
     if not DATA_PATH.exists():
-        DATA_PATH = Path("C:/Users/anna2/OneDrive/Desktop/CSS/human_ai_chatlogs.csv")
+        DATA_PATH = Path("C:/Users/anna2/OneDrive/Desktop/CSS/data/human_ai_chatlogs.csv")
         print(f"Using legacy path: {DATA_PATH}")
     
     if not DATA_PATH.exists():

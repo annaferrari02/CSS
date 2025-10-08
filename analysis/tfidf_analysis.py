@@ -9,7 +9,7 @@ from multiprocessing import Pool, cpu_count
 # Import from shared preprocessing module
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-from src.preprocessing.text_cleaner import clean_text
+from text_cleaner import clean_text
 
 
 def run_tfidf_analysis(data_path, output_dir=None, use_multiprocessing=False):
@@ -132,12 +132,12 @@ def run_tfidf_analysis(data_path, output_dir=None, use_multiprocessing=False):
 
 
 if __name__ == "__main__":
-    DATA_PATH = Path("data") / "human-ai-chatlogs.csv"
+    DATA_PATH = Path("data") / "human_ai_chatlogs.csv"
     
     # Fallback paths
     if not DATA_PATH.exists():
         possible_paths = [
-            Path("C:/Users/anna2/OneDrive/Desktop/CSS/human_ai_chatlogs.csv"),
+            Path("C:/Users/anna2/OneDrive/Desktop/CSS/data/human_ai_chatlogs.csv"),
             Path("/home/mhchu/AI-Companion/human-ai/data/data/human_ai_chatlogs.csv")
         ]
         for path in possible_paths:
