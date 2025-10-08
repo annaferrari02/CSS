@@ -9,7 +9,7 @@ ENV/
 # Data & Output (locale)
 data/*
 !data/human_ai_chatlogs.csv
-output/
+
 
 # File grandi (escluso human_ai_chatlogs.csv)
 *.jsonl
