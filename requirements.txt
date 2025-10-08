@@ -1,0 +1,32 @@
+# Core data analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# NLP and text processing
+nltk>=3.8.0
+
+# Machine learning and embeddings
+torch>=2.0.0
+sentence-transformers>=2.2.0
+scikit-learn>=1.3.0
+
+# Topic modeling
+bertopic>=0.15.0
+
+# Dimensionality reduction
+umap-learn>=0.5.3
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Image processing (for download_data.py)
+opencv-python>=4.8.0
+Pillow>=10.0.0
+pytesseract>=0.3.10
+
+# Web scraping (for download_data.py)
+requests>=2.31.0
+
+# Utilities
+tqdm>=4.65.0

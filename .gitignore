@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.Python
+venv/
+env/
+ENV/
+
+# Data & Output (locale)
+data/*
+!data/human_ai_chatlogs.csv
+output/
+
+# File grandi (escluso human_ai_chatlogs.csv)
+*.jsonl
+*.jpg
+*.png
+*.pdf
+
+# IDE
+.vscode/
+.DS_Store
+
+# Vecchie cartelle
+src/
+scripts/
+analysis-script/
+text-from-screenshot-*/
+illusion-of-intimacy-code/
