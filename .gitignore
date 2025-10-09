@@ -6,16 +6,23 @@ venv/
 env/
 ENV/
 
-# Data & Output (locale)
+# Data (locale)
 data/*
 !data/human_ai_chatlogs.csv
 
-
-# File grandi (escluso human_ai_chatlogs.csv)
+# File grandi globali (escluso human_ai_chatlogs.csv e output)
 *.jsonl
+*.pdf
 *.jpg
 *.png
-*.pdf
+
+# Eccezioni per output - permetti immagini e PDF
+!output/*.jpg
+!output/*.png
+!output/*.pdf
+
+# File grandi esclusi da output
+output/*.jsonl
 
 # IDE
 .vscode/
