@@ -1,0 +1,42 @@
+
+        ======================================================================
+        VALIDATION SAMPLE REPORT
+        ======================================================================
+        SAMPLE STATISTICS
+        Total screenshots: 90
+        Random seed: 42
+        Min confidence threshold: 0.7
+        Date: 2025-10-09 17:19
+        SUBREDDIT DISTRIBUTION
+        subreddit
+replika            74
+MyBoyfriendIsAI    14
+AIRelationships     2
+        MATCH CONFIDENCE
+        Mean: 0.767
+        Median: 0.700
+        Min: 0.700
+        METADATA AVAILABLE
+        Posts represented: 87
+        Average images per post: 1.0
+        FILES GENERATED
+
+        screenshots/ (90 files)
+        annotation_template.csv
+        annotation_template.xlsx
+        ANNOTATION_GUIDELINES.md
+        sample_metadata.csv
+        sampling_report.txt
+
+        ESTIMATED ANNOTATION TIME
+        Screenshots per annotator: 90
+        Average time: 2-3 min/screenshot
+        Total estimated: 3.8 - 5.2 hours
+        NEXT STEPS
+
+        Review screenshots in screenshots/ folder
+        Distribute annotation_template.xlsx to annotators
+        Complete annotations independently
+        Calculate inter-annotator agreement
+        Run validation analysis
+        
