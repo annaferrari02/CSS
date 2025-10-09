@@ -10,19 +10,15 @@ ENV/
 data/*
 !data/human_ai_chatlogs.csv
 
-# File grandi globali (escluso human_ai_chatlogs.csv e output)
+# File grandi globali (escluso human_ai_chatlogs.csv e analysis/output)
 *.jsonl
 *.pdf
 *.jpg
 *.png
 
-# Eccezioni per output - permetti immagini e PDF
-!output/*.jpg
-!output/*.png
-!output/*.pdf
-
-# File grandi esclusi da output
-output/*.jsonl
+# Eccezioni per analysis/output - permetti tutto
+!analysis/output/
+!analysis/output/**
 
 # IDE
 .vscode/
