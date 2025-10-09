@@ -191,9 +191,18 @@ def prescreen_image_for_text(preview_url, media_id):
 
 def has_images(post):
     """Check if post contains images"""
-    return (post.get('is_gallery', False) and 
-            'media_metadata' in post and 
-            post.get('media_metadata'))
+    # Controlla gallerie
+    if (post.get('is_gallery', False) and 
+        'media_metadata' in post and 
+        post.get('media_metadata')):
+        return True
+    
+    # Controlla singole immagini
+    if 'media_metadata' in post and post.get('media_metadata'):
+        return True
+    
+    # Altri casi...
+    return False
 
 
 def download_image(url, filename, output_dir):

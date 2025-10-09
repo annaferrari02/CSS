@@ -6,19 +6,9 @@ venv/
 env/
 ENV/
 
-# Data (locale)
-data/*
-!data/human_ai_chatlogs.csv
-
-# File grandi globali (escluso human_ai_chatlogs.csv e analysis/output)
-*.jsonl
-*.pdf
-*.jpg
-*.png
-
-# Eccezioni per analysis/output - permetti tutto
-!analysis/output/
-!analysis/output/**
+# Data - ignora solo screenshots e JSON
+data/screenshots/
+data/*.json
 
 # IDE
 .vscode/
