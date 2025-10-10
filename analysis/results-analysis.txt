@@ -1,0 +1,13 @@
+let's break down the results of our text analysis 
+
+TEXT ANALYSIS 
+analysis performed 
+- topic modeling using BERTopic model 
+- semantic alignment (UMAP projection)
+- tfidf analysis 
+
+TOPIC MODELING 
+da illusion of intimacy: Topic Modeling. We apply BERTopic (Grootendorst 2022) to dialogue turns, leveraging BERT embeddings to automatically
+discover the top 20 latent themes in user vs. chatbot utterances. By comparing topic distributions, we di rectly assess whether chatbots follow 
+users conversational agendas or introduce divergent themes, addressing our question of thematic mirroring.
+
