@@ -1,0 +1,30 @@
+================================================================================
+TOP TOPICS IN USER-CHATBOT CONVERSATIONS
+================================================================================
+
+USER Topics:
+--------------------------------------------------------------------------------
+Rank   Topic                                                        Count     
+--------------------------------------------------------------------------------
+1      **"Positive engagement & casual bonding"**                   13164     
+2      Outliers                                                     2086      
+3      Fashion & nature aesthetic descriptions                      153       
+4      **"Playful dares & flirty challenges"**                      87        
+5      **"Tech & hardware memory discussions"**                     56        
+6      **"U.S. state abbreviations & numbers"**                     52        
+7      **"Magnetic cube puzzles & force control"**                  37        
+8      **"Human nature and meaningful interactions"**               29        
+
+
+CHATBOT Topics:
+--------------------------------------------------------------------------------
+Rank   Topic                                                        Count     
+--------------------------------------------------------------------------------
+1      **"Positive engagement & casual expressions"**               22608     
+2      Outliers                                                     5034      
+3      Fashion & nature aesthetic descriptions                      344       
+4      **"Software security & UI updates"**                         83        
+5      **"Playful dares & flirty challenges"**                      69        
+6      **"Tech hardware & memory discussions"**                     67        
+7      **"Human nature and meaning discussions"**                   38        
+8      **"Romantic relationship status & boundaries"**              35        
