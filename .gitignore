@@ -6,9 +6,22 @@ venv/
 env/
 ENV/
 
-# Data - ignora solo screenshots e JSON
-data/screenshots/
-data/*.json
+# Data originali
+data/
+
+# JSON ovunque
+*.json
+*.jsonl
+
+# Screenshot SAMPLE (non servono nel repo)
+extraction_eval/validation_sample/screenshots/
+extraction_eval/validation_sample/screenshots_mapping.csv
+
+# MA mantieni screenshot in annotators/
+# (non serve specificare - Git li include automaticamente)
+
+# Git LFS (rimuovilo)
+.gitattributes
 
 # IDE
 .vscode/
@@ -20,3 +33,8 @@ scripts/
 analysis-script/
 text-from-screenshot-*/
 illusion-of-intimacy-code/
+
+# File temporanei
+~$*.xlsx
+*.tmp
+*.log
