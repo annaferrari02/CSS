@@ -12,6 +12,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[numbers]{natbib}
 
 \title{Human-AI interactions analysis}
 \author{Anna Ferrari, Tommaso Ballarini, Walter Scafa}
@@ -26,9 +27,22 @@ Human-AI interactions; Conversational system; Social Chatbot; Artificial intelli
 
 \section{Introduction}
 
-Building machines able to converse with humans using natural language has been the fundamental challenge in the field of Artificial Intelligence (AI) from the earliest stage of its development.  Code and data available at \href{https://github.com/annaferrari02/CSS}{GitHub/human-AI Interaction analysis}.
+Building machines able to converse with humans using natural language has been the fundamental challenge in the field of Artificial Intelligence (AI) from the earliest stage of its development. Inspired by the Turing test, whose goal was to determine whether a machine could exhibit intelligent behavior indistinguishable from that of a human by assessing its ability to engage in natural conversations \cite{turing1950computing}, multiple researchers made an attempt to create "social chatbots" (SC), i.e., computer programs capable of convincingly conducting a human-like conversation using audio or text \cite{article}. 
+While early chatbots engage in simple chitchat, advances in Large Language Models (LLMs) have enabled AI chatbots to generate contextually appropriate responses, understand not only the literal meaning of words but also how expressions can convey meanings different from their individual words, and recognize and track the user’s emotional state \cite{chu2025illusionsintimacyemotionalattachment, article}. 
+As computers became increasingly capable of mimicking human behavior (displaying personality, expressing empathy, and tracking users’ emotional states) a new field emerged at the intersection of AI, ethics, and sociology. This field investigates whether human–computer interactions can be analyzed using sociological paradigms and approaches traditionally applied to human relationships \cite{inproceedings}. In 1994, the publication of Computers are Social Actors by C. Nass, J. Steuer, and E. R. Tauber introduced the so-called "CASA paradigm," which posits that people respond to computers in fundamentally social ways, applying the same rules, norms, and expectations that govern interpersonal relationships \cite{10.1145/259963.260288,article}. This work laid the foundation for applying theories of human interaction to human–machine relationships and opened the way for a broad scholarly discourse on AI companionship, along with the social and psychological issues it raises. Previous literature studying SC attempted to analyze the phenomenon using existing theories, such as the Social Response Theory, Social Penetration Theory and the Attachment Theory \cite{inproceedings, article1, article2}, but lacked in explaining the underlying mechanisms of AI that facilitate the creation of personal relationships with SC.  Indeed, vast majority of research in this field has relied on self-reported surveys, small-scale qualitative studies and focus-group interviews. This paper makes an attempt to contribute to the discourse by leveraging methods from computational social science to analyze large-scale text-based interactions between Reddit users who share experiences of AI companions and different SC. 
+Specifically, we examine over 30,000 user-shared conversations from Reddit communities (Replika, MyBoyfriendIsAI, AIRelationship...), combining computational text-analysis, topic modeling and emotion detection to investigate more deeply the interplay between algorithmic design and human behavior. 
+Our approach addresses a fundamental question at the intersection of technology and society: how do the technical mechanisms embedded in AI companions, such as emotional mirroring, preference alignment, and conversational adaptation, interact with psychological processes like attachment formation and social response tendencies? By analyzing naturally occurring conversation data, we can observe not only what users say they experience (as captured in surveys) but what they actually do in their interactions with AI systems. This allows us to quantify patterns of emotional alignment, identify moments when interactions become harmful, and trace how algorithmic responsiveness may reinforce or escalate problematic dynamics.
+
+
+
+
+
+Code and data available at \href{https://github.com/annaferrari02/CSS}{GitHub/human-AI Interaction analysis}.
+
 
 \section{Literature}
+
+
 
 \subsection{How to create Sections and Subsections}
 
@@ -112,7 +126,7 @@ If you have an \href{https://www.overleaf.com/user/subscription/plans}{upgraded 
 
 We hope you find Overleaf useful, and do take a look at our \href{https://www.overleaf.com/learn}{help library} for more tutorials and user guides! Please also let us know if you have any feedback using the Contact Us link at the bottom of the Overleaf menu --- or use the contact form at \url{https://www.overleaf.com/contact}.
 
-\bibliographystyle{alpha}
+\bibliographystyle{unsrtnat}
 \bibliography{sample}
 
 \end{document}

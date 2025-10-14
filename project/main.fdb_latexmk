@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1760108229.73968 "main.aux" "main.bbl" "main" 1760108256.65596 0
-  "./sample.bib" 1760108229 244 0810be99547e6f3295f454437e22fee4 ""
-  "C:/Program Files/MiKTeX/bibtex/bst/bibtex/alpha.bst" 1291864736 23907 a5f93555796fb564b924339521f10a7c ""
-  "main.aux" 1760108256 2361 96a132451aec72fc8d2e700015122c2f "pdflatex"
+["bibtex main"] 0 "main.aux" "main.bbl" "main" 1760440768.04343 -1
+  "./sample.bib" 1760440763 3633 7e34a21fc471d73eb855b53d51995cb6 ""
+  "C:/Users/anna2/AppData/Local/Programs/MiKTeX/bibtex/bst/natbib/unsrtnat.bst" 1284455456 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
+  "main.aux" 1760440767 2586 f4496ccd63d706c6e855e99fe1b5ff52 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1760108255.50937 "c:/Users/anna2/OneDrive/Desktop/CSS/project/main.tex" "main.pdf" "main" 1760108256.65649 2
+["pdflatex"] 1760440766.75707 "c:/Users/anna2/OneDrive/Desktop/CSS/project/main.tex" "main.pdf" "main" 1760440768.04392 2
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993062508 1436 c7f957a372ef2fbe93c0982f96625e12 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -87,17 +87,19 @@
   "C:/Users/anna2/AppData/Local/Programs/MiKTeX/tex/generic/uniquecounter/uniquecounter.sty" 1576434012 7008 f92eaa0a3872ed622bbf538217cd2ab7 ""
   "C:/Users/anna2/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg" 1578053545 1104 7ac475a4e3466b0b43e138e9356bda83 ""
   "C:/Users/anna2/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.sty" 1578053545 42759 9cf6c5257b1bc7af01a58859749dd37a ""
+  "C:/Users/anna2/AppData/Local/Programs/MiKTeX/tex/latex/grfext/grfext.sty" 1575399474 7133 b94bbacbee6e4fdccdc7f810b2aec370 ""
   "C:/Users/anna2/AppData/Local/Programs/MiKTeX/tex/latex/hycolor/hycolor.sty" 1580380792 18571 4c28a13fc3d975e6e81c9bea1d697276 ""
   "C:/Users/anna2/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.sty" 1656236481 22555 6d8e155cfef6d82c3d5c742fea7c992e ""
   "C:/Users/anna2/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.sty" 1665066333 13815 760b0c02f691ea230f5359c4e1de23a7 ""
+  "C:/Users/anna2/AppData/Local/Programs/MiKTeX/tex/latex/natbib/natbib.sty" 1292249081 46712 1c8843383c0bd05870c45fa0ebea6cc2 ""
   "C:/Users/anna2/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/anna2/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
-  "c:/Users/anna2/OneDrive/Desktop/CSS/project/main.tex" 1760108229 6882 58c025f979dab20709524d50e5b6f89d ""
-  "frog.jpg" 1760107519 97080 665777aa6c7c48794db02f5d69ccc24a ""
-  "main.aux" 1760108256 2361 96a132451aec72fc8d2e700015122c2f "pdflatex"
+  "c:/Users/anna2/OneDrive/Desktop/CSS/project/main.tex" 1760440763 10508 303e0cbcb98ee29529fcbf067ccf8e1e ""
+  "frog.jpg" 1760440763 97080 665777aa6c7c48794db02f5d69ccc24a ""
+  "main.aux" 1760440767 2586 f4496ccd63d706c6e855e99fe1b5ff52 "pdflatex"
   "main.bbl" 1760108229 52 0eba253fc001332e731e8aba3f23127b "bibtex main"
-  "main.out" 1760108256 2441 14177461528b7d571514404e4ae3d4f3 "pdflatex"
-  "main.tex" 1760108229 6882 58c025f979dab20709524d50e5b6f89d ""
+  "main.out" 1760440767 2441 14177461528b7d571514404e4ae3d4f3 "pdflatex"
+  "main.tex" 1760440763 10508 303e0cbcb98ee29529fcbf067ccf8e1e ""
   (generated)
   "main.aux"
   "main.log"
