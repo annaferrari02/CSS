@@ -40,17 +40,16 @@ Our approach addresses a fundamental question at the intersection of technology 
 Code and data available at \href{https://github.com/annaferrari02/CSS}{GitHub/human-AI Interaction analysis}.
 
 
-\section{Literature}
+\section{Literature Overview}
 
+\subsection{Theoretical Frameworks: Attachment, Parasocial Interaction, and Social Response}
 
+2 paper di stampo piu teorico-sociologico
 
-\subsection{How to create Sections and Subsections}
+\subsection{Computational Approaches to Human-AI Interaction}
+2 paper piu tecnici a livello metodologico (illusion of intimacy e MIT-mbia?) 
 
-Simply use the section and subsection commands, as in this example document! With Overleaf, all the formatting and numbering is handled automatically according to the template you've chosen. If you're using Rich Text mode, you can also create new section and subsections via the buttons in the editor toolbar.
-
-\subsection{How to include Figures}
-
-First you have to upload the image file from your computer using the upload link in the file-tree menu. Then use the includegraphics command to include it in your document. Use the figure environment and the caption command to add a number and a caption to your figure. See the code for Figure \ref{fig:frog} in this section for an example.
+ \ref{fig:frog} in this section for an example.
 
 Note that your figure will automatically be placed in the most appropriate place for it, given the surrounding text and taking into account other figures or tables that may be close by. You can find out more about adding images to your documents in this help article on \href{https://www.overleaf.com/learn/how-to/Including_images_on_Overleaf}{including images on Overleaf}.
 
@@ -60,7 +59,7 @@ Note that your figure will automatically be placed in the most appropriate place
 \caption{\label{fig:frog}This frog was uploaded via the file-tree menu.}
 \end{figure}
 
-\subsection{How to add Tables}
+\subsection{Research Questions}
 
 Use the table and tabular environments for basic tables --- see Table~\ref{tab:widgets}, for example. For more information, please see this help article on \href{https://www.overleaf.com/learn/latex/tables}{tables}. 
 
@@ -116,15 +115,27 @@ To configure the document language, simply edit the option provided to the babel
 
 To change the spell check language, simply open the Overleaf menu at the top left of the editor window, scroll down to the spell check setting, and adjust accordingly.
 
-\subsection{How to add Citations and a References List}
 
-You can simply upload a \verb|.bib| file containing your BibTeX entries, created with a tool such as JabRef. You can then cite entries from it, like this: \cite{greenwade93}. Just remember to specify a bibliography style, as well as the filename of the \verb|.bib|. You can find a \href{https://www.overleaf.com/help/97-how-to-include-a-bibliography-using-bibtex}{video tutorial here} to learn more about BibTeX.
+\section {Project Design}
 
-If you have an \href{https://www.overleaf.com/user/subscription/plans}{upgraded account}, you can also import your Mendeley or Zotero library directly as a \verb|.bib| file, via the upload menu in the file-tree.
+\subsection{Data Collection}
 
-\subsection{Good luck!}
+\subsection{Methodology}
+\begin{enumerate}
+\item Topic Modeling
 
-We hope you find Overleaf useful, and do take a look at our \href{https://www.overleaf.com/learn}{help library} for more tutorials and user guides! Please also let us know if you have any feedback using the Contact Us link at the bottom of the Overleaf menu --- or use the contact form at \url{https://www.overleaf.com/contact}.
+In order to systematically identify semantic themes characterizing user-chatbot interactions, we employed BERTopic, a neural topic modeling approach that leverages transformer-based embeddings to capture latent conversational structure \cite{grootendorst2022bertopic}. After standard preprocessing (stopword removal, lemmatization), we applied BERTopic's three-stage pipeline: (1) UMAP dimensionality reduction, which projects high-dimensional embeddings into lower dimensional space while preserving the semantic structure, (2) HDBSCAN density-based clustering, which identifies semantically coherent clusters, and (3) class-based TF-IDF for topic representation, constraining the model to 20 topics aiming to better interpretability. Topic labels were generated via Mistral-Large (2024) few-shot prompting (for each discovered topic, the model received the top-10 keywords and generated a descriptive label of max 6 words, see Fig. ----aggiungere fig del prompt----). 
+From a sociological perspective, this operationalizes conversational frames, revealing whether chatbots follow users' thematic agendas or introduce divergent themes, addressing the issue of thematic mirroring\cite{9031475, chu2025illusionsintimacyemotionalattachment}. 
+\item Semantic alignment
+
+To quantify whether users and chatbots discuss semantically similar content in terms of conversational convergence and co-constructed meaning we embed every conversation using the E5-base \cite{Wang2022TextEB}, a state-of-the-art embedding model that maps natural language into a 768-dimensional semantic space where cosine similarity reflects meaning overlap. Unlike topic modeling, which identifies discrete themes, semantic embeddings capture continuous semantic relatedness, allowing us to measure fine-grained alignment even when different words express similar concepts (e.g., "happy" vs. "joyful"). To assess global semantic alignment, we computed centroid embeddings for USER- and Chatbot-generated text separately by averaging all turn-level vectors, then calculated cosine similarity between centroids, a metric ranging from 0 (orthogonal meaning) to 1 (identical semantic space). For visualization, we applied UMAP to project high-dimensional embeddings into 2D space, preserving local semantic structure while revealing distributional patterns. The resulting scatter plot shows whether USER and Chatbot expressions occupy overlapping regions (indicating shared semantic space) or form distinct clusters (suggesting divergent conversational content). This analysis complements topic modeling by addressing the issue of "user mirroring" at a continuous, rather than categorical, level: while topic modeling reveals what themes dominate, semantic alignment reveals how closely the parties' overall language use converges, operationalizing the concept of "socio-affective alignment", i.e. how an AI system
+behaves within the social and psychological ecosystem co-created with itsuser, where preferences and perceptions
+evolve through mutual influence \cite{socioaffective}. 
+\end{enumerate}
+
+\section {Results}
+
+\section {Conclusions}
 
 \bibliographystyle{unsrtnat}
 \bibliography{sample}
