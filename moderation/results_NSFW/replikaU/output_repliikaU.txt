@@ -1,0 +1,102 @@
+ Avvio dell'analisi sul DataFrame consolidato...
+================================================================================
+ANALISI NSFW/SFW CHAT DATASET
+================================================================================
+
+Dataset: 9,045 messaggi totali.
+2432 conversazioni uniche.
+Range turn: 1 - 21
+
+================================================================================
+1. ANALISI DI DISTRIBUZIONE NSFW/SFW
+================================================================================
+
+Distribuzione messaggi:
+  NSFW: 6,122 (67.68%)
+  SFW: 2,923 (32.32%)
+
+Distribuzione per ruolo:
+label     NSFW    SFW
+party                
+Chatbot  65.18  34.82
+USER     71.51  28.49
+
+✓ Salvato: /content/drive/MyDrive/data/results_replikaU/01_distribuzione_generale.png
+
+================================================================================
+2. ANALISI PER RUOLO E PATTERN DI ESCALATION
+================================================================================
+
+Nessun pattern 'USER' -> 'Chatbot' trovato.
+
+--- PATTERN DI ESCALATION ---
+
+Conversazioni con escalation (SFW → NSFW): 652
+Turn medio prima escalation: 2.4
+Turn mediano: 2.0
+
+✓ Salvato: /content/drive/MyDrive/data/results_replikaU/02_analisi_ruolo_escalation.png
+
+================================================================================
+3. ANALISI TEMPORALE
+================================================================================
+
+Conversazioni che iniziano NSFW: 1628 (66.9%)
+Conversazioni che iniziano SFW: 804 (33.1%)
+
+--- PERSISTENZA NSFW ---
+Conversazioni NSFW dall'inizio: 1628
+% media messaggi NSFW in queste conversazioni: 83.5%
+
+--- SEQUENZE NSFW CONSECUTIVE ---
+Sequenze NSFW consecutive trovate: 2280
+Lunghezza media: 2.3 messaggi
+Sequenza più lunga: 11 messaggi
+Distribuzione lunghezze: [(1, 806), (2, 683), (3, 432), (4, 214), (5, 84)]
+
+✓ Salvato: /content/drive/MyDrive/data/results_replikaU/03_analisi_temporale.png
+
+================================================================================
+4. WORDCLOUD E ANALISI TRIGGER
+================================================================================
+
+✓ Salvato: /content/drive/MyDrive/data/results_replikaU/04_wordcloud_nsfw.png
+
+--- ANALISI TRIGGER: Input User → Risposta NSFW Chatbot ---
+
+Nessun caso 'User -> Chatbot NSFW' trovato per analizzare i trigger.
+
+================================================================================
+5. CONVERSAZIONI CONTAMINATE
+================================================================================
+
+Conversazioni totali: 2432
+Conversazioni contaminate (≥1 NSFW): 2280 (93.8%)
+Conversazioni pulite (100% SFW): 152 (6.2%)
+
+--- Livelli di contaminazione ---
+Media % NSFW per conversazione: 70.2%
+Mediana: 75.0%
+
+Categorizzazione contaminazione:
+  Pulite (0% NSFW): 152 (6.2%)
+  Bassa (1-25%): 65 (2.7%)
+  Media (26-75%): 1136 (46.7%)
+  Alta (76-99%): 180 (7.4%)
+  Completamente NSFW (100%): 899 (37.0%)
+
+✓ Salvato: /content/drive/MyDrive/data/results_replikaU/06_conversazioni_contaminate.png
+
+================================================================================
+REPORT GENERATO CON SUCCESSO
+================================================================================
+
+File generati in: /content/drive/MyDrive/data/results_replikaU/
+  1. 01_distribuzione_generale.png
+  2. 02_analisi_ruolo_escalation.png (Se 'party', 'turn', 'conversation_id' presenti)
+  3. 03_analisi_temporale.png (Se 'turn', 'conversation_id' presenti)
+  4. 04_wordcloud_nsfw.png (Se 'party' presente)
+  5. 05_trigger_analysis.png (Se 'party', 'turn', 'conversation_id' presenti)
+  6. 06_conversazioni_contaminate.png (Se 'conversation_id' presente)
+
+================================================================================
