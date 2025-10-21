@@ -19,7 +19,7 @@ from pathlib import Path
 base_dir = Path(__file__).resolve().parent.parent  # rimuove "analysis"
 
 # Costruisci il percorso corretto
-DATA_PATH = base_dir / "data" / "human_ai_chatlogs.csv"
+DATA_PATH = base_dir / "data" / "human_ai_chatlogs_ilmr.csv" #MODIFICARE 
 
 # 🔹 Carica il dataset
 df = pd.read_csv(DATA_PATH, usecols=["party", "text"])
@@ -82,7 +82,7 @@ os.makedirs(path, exist_ok=True)
 
 # salva i file nella cartella di output
 for ext in ("png", "pdf"):
-    fn = os.path.join(path, f"semantic_umap.{ext}")
+    fn = os.path.join(path, f"semantic_umap_ilmr.{ext}") #MODIFICA
     plt.savefig(fn, dpi=300)
 
 print("✅ Saved output/semantic_umap.{png,pdf}")

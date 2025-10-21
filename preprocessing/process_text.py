@@ -5,8 +5,8 @@ from collections import defaultdict
 
 BASE_DIR = Path(__file__).parent.parent
 DATA_DIR = BASE_DIR / 'data'
-INPUT_FILE = DATA_DIR / 'extracted_chat.txt'
-OUTPUT_FILE = DATA_DIR / 'human_ai_chatlogs.csv'
+INPUT_FILE = DATA_DIR / 'extracted_chat_results_ilmr.txt' #DA MODIFICARE
+OUTPUT_FILE = DATA_DIR / 'human_ai_chatlogs_ilmr.csv' #DA MODIFICARE 
 
 
 def parse_chat_file_optimized(file_path):
