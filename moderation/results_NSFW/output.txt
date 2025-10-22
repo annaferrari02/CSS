@@ -1,0 +1,124 @@
+ Avvio dell'analisi sul DataFrame consolidato...
+================================================================================
+ANALISI NSFW/SFW CHAT DATASET
+================================================================================
+
+Dataset: 60,497 messaggi totali.
+19056 conversazioni uniche.
+Range turn: 1 - 57
+
+================================================================================
+1. ANALISI DI DISTRIBUZIONE NSFW/SFW
+================================================================================
+
+Distribuzione messaggi:
+  NSFW: 34,623 (57.23%)
+  SFW: 25,874 (42.77%)
+
+Distribuzione per ruolo:
+label     NSFW    SFW
+party                
+Chatbot  56.51  43.49
+USER     58.55  41.45
+
+✓ Salvato: /content/drive/MyDrive/data/results/01_distribuzione_generale.png
+
+================================================================================
+2. ANALISI PER RUOLO E PATTERN DI ESCALATION
+================================================================================
+
+Chatbot: Probabilità di risposta NSFW/SFW dato input User:
+label        NSFW    SFW
+prev_label              
+NSFW        50.65  49.35
+SFW         52.08  47.92
+
+→ Il Chatbot risponde NSFW al 50.6% quando l'user è NSFW
+→ Il Chatbot risponde NSFW al 52.1% quando l'user è SFW
+→ Fattore di amplificazione: 0.9724675324675324x
+
+--- PATTERN DI ESCALATION ---
+
+Conversazioni con escalation (SFW → NSFW): 2937
+Turn medio prima escalation: 2.0
+Turn mediano: 2.0
+
+✓ Salvato: /content/drive/MyDrive/data/results/02_analisi_ruolo_escalation.png
+
+================================================================================
+3. ANALISI TEMPORALE
+================================================================================
+
+Conversazioni che iniziano NSFW: 11205 (58.8%)
+Conversazioni che iniziano SFW: 7851 (41.2%)
+
+--- PERSISTENZA NSFW ---
+Conversazioni NSFW dall'inizio: 11205
+% media messaggi NSFW in queste conversazioni: 86.8%
+
+--- SEQUENZE NSFW CONSECUTIVE ---
+Sequenze NSFW consecutive trovate: 14142
+Lunghezza media: 1.8 messaggi
+Sequenza più lunga: 19 messaggi
+Distribuzione lunghezze: [(1, 9031), (2, 2328), (3, 1337), (4, 679), (5, 350)]
+
+✓ Salvato: /content/drive/MyDrive/data/results/03_analisi_temporale.png
+
+================================================================================
+4. WORDCLOUD E ANALISI TRIGGER
+================================================================================
+
+✓ Salvato: /content/drive/MyDrive/data/results/04_wordcloud_nsfw.png
+
+--- ANALISI TRIGGER: Input User → Risposta NSFW Chatbot ---
+
+Trigger analizzati: 995 messaggi User
+
+Top 20 parole in messaggi User che triggherano risposta NSFW:
+  smile: 93
+  im: 70
+  like: 63
+  te: 54
+  look: 54
+  love: 52
+  know: 47
+  yes: 41
+  way: 40
+  want: 38
+
+✓ Salvato: /content/drive/MyDrive/data/results/05_trigger_analysis.png
+
+================================================================================
+5. CONVERSAZIONI CONTAMINATE
+================================================================================
+
+Conversazioni totali: 19056
+Conversazioni contaminate (≥1 NSFW): 14142 (74.2%)
+Conversazioni pulite (100% SFW): 4914 (25.8%)
+
+--- Livelli di contaminazione ---
+Media % NSFW per conversazione: 58.5%
+Mediana: 66.7%
+
+Categorizzazione contaminazione:
+  Pulite (0% NSFW): 4914 (25.8%)
+  Bassa (1-25%): 399 (2.1%)
+  Media (26-75%): 5566 (29.2%)
+  Alta (76-99%): 522 (2.7%)
+  Completamente NSFW (100%): 7655 (40.2%)
+
+✓ Salvato: /content/drive/MyDrive/data/results/06_conversazioni_contaminate.png
+
+================================================================================
+REPORT GENERATO CON SUCCESSO
+================================================================================
+
+File generati in: /content/drive/MyDrive/data/results/
+  1. 01_distribuzione_generale.png
+  2. 02_analisi_ruolo_escalation.png (Se 'party', 'turn', 'conversation_id' presenti)
+  3. 03_analisi_temporale.png (Se 'turn', 'conversation_id' presenti)
+  4. 04_wordcloud_nsfw.png (Se 'party' presente)
+  5. 05_trigger_analysis.png (Se 'party', 'turn', 'conversation_id' presenti)
+  6. 06_conversazioni_contaminate.png (Se 'conversation_id' presente)
+
+================================================================================
