@@ -19,7 +19,7 @@ from pathlib import Path
 base_dir = Path(__file__).resolve().parent.parent  # rimuove "analysis"
 
 # Costruisci il percorso corretto
-DATA_PATH = base_dir / "data" / "human_ai_chatlogs_ilmr.csv" #MODIFICARE 
+DATA_PATH = base_dir / "data_cleaned" / "perspective_moderated_human_ai_chatlogs_cleaned.csv" #MODIFICARE 
 
 # 🔹 Carica il dataset
 df = pd.read_csv(DATA_PATH, usecols=["party", "text"])

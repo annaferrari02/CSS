@@ -17,7 +17,7 @@ warnings.filterwarnings('ignore')
 # ============================================================================
 
 SCRIPT_DIR = Path(__file__).parent
-DATA_PATH = SCRIPT_DIR.parent / "data" / "human_ai_chatlogs_ilmr.csv"
+DATA_PATH = "C:/Users/anna2/OneDrive/Desktop/CSS/data_cleaned/perspective_moderated_human_ai_chatlogs_cleaned.csv"
 OUTPUT_DIR = SCRIPT_DIR / "output"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 

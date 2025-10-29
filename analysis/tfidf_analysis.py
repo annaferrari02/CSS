@@ -132,12 +132,12 @@ def run_tfidf_analysis(data_path, output_dir=None, use_multiprocessing=False):
 
 
 if __name__ == "__main__":
-    DATA_PATH = Path("data") / "human_ai_chatlogs.csv"
+    DATA_PATH = Path("data_cleaned") / "perspective_moderated_human_ai_chatlogs_cleaned.csv"
     
     # Fallback paths
     if not DATA_PATH.exists():
         possible_paths = [
-            Path("C:/Users/anna2/OneDrive/Desktop/CSS/data/human_ai_chatlogs.csv"),
+            Path("C:/Users/anna2/OneDrive/Desktop/CSS/data_cleaned/perspective_moderated_human_ai_chatlogs_cleaned.csv"),
             Path("/home/mhchu/AI-Companion/human-ai/data/data/human_ai_chatlogs.csv")
         ]
         for path in possible_paths:

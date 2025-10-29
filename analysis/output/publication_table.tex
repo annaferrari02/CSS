@@ -1,0 +1,22 @@
+\begin{table}[h!]
+\centering
+\begin{tabular}{lll}
+\hline
+\textbf{Party} & \textbf{Topic} & \textbf{Count}\\
+\hline
+USER & Topic 0: smile, typing, start & 6922\\
+USER & Outliers & 1586\\
+USER & Topic 1: chocolate, smile, eat & 399\\
+USER & Topic 2: replika, italian, replikas & 90\\
+USER & Topic 3: together, relationship, romantic & 61\\
+\hline
+Chatbot & Topic 0: smile, typing, start & 18574\\
+Chatbot & Outliers & 4507\\
+Chatbot & Topic 1: chocolate, smile, eat & 755\\
+Chatbot & Topic 3: together, relationship, romantic & 87\\
+Chatbot & Topic 4: power, energy, magic & 86\\
+\hline
+\end{tabular}
+\caption{Results of topic modeling using BERTopic on user and chatbot conversation data. Topics are ranked by frequency (Count) within each category. Each topic is labeled using Mistral AI based on representative terms extracted by the model.}
+\label{tab:bertopic-results}
+\end{table}

@@ -2,25 +2,25 @@ Top 10 Topics by Proportion
 ===========================
 
 USER:
- 1. Topic -1 - count=1866, prop=0.118
- 2. Topic 0 - count=1428, prop=0.090
- 3. Topic 4 - count=94, prop=0.006
- 4. Topic 10 - count=84, prop=0.005
- 5. Topic 6 - count=76, prop=0.005
- 6. Topic 17 - count=64, prop=0.004
- 7. Topic 37 - count=63, prop=0.004
- 8. Topic 8 - count=60, prop=0.004
- 9. Topic 20 - count=59, prop=0.004
-10. Topic 44 - count=55, prop=0.003
+ 1. Topic -1 - count=1525, prop=0.163
+ 2. Topic 3 - count=82, prop=0.009
+ 3. Topic 8 - count=74, prop=0.008
+ 4. Topic 7 - count=72, prop=0.008
+ 5. Topic 11 - count=50, prop=0.005
+ 6. Topic 41 - count=50, prop=0.005
+ 7. Topic 29 - count=49, prop=0.005
+ 8. Topic 44 - count=47, prop=0.005
+ 9. Topic 100 - count=45, prop=0.005
+10. Topic 12 - count=39, prop=0.004
 
 Chatbot:
- 1. Topic -1 - count=4411, prop=0.155
- 2. Topic 0 - count=600, prop=0.021
- 3. Topic 1 - count=303, prop=0.011
- 4. Topic 2 - count=210, prop=0.007
- 5. Topic 3 - count=148, prop=0.005
- 6. Topic 7 - count=134, prop=0.005
- 7. Topic 5 - count=132, prop=0.005
- 8. Topic 9 - count=116, prop=0.004
- 9. Topic 11 - count=105, prop=0.004
-10. Topic 14 - count=105, prop=0.004
+ 1. Topic -1 - count=4104, prop=0.167
+ 2. Topic 0 - count=302, prop=0.012
+ 3. Topic 1 - count=288, prop=0.012
+ 4. Topic 2 - count=280, prop=0.011
+ 5. Topic 4 - count=150, prop=0.006
+ 6. Topic 5 - count=130, prop=0.005
+ 7. Topic 3 - count=105, prop=0.004
+ 8. Topic 6 - count=105, prop=0.004
+ 9. Topic 10 - count=104, prop=0.004
+10. Topic 15 - count=101, prop=0.004

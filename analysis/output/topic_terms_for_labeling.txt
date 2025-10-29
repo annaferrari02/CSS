@@ -3,176 +3,176 @@ TOPIC TERMS FOR MANUAL LABELING
 
 USER Top 8 Topics:
 
-Topic 0 (Count: 13164):
-  smile                0.0239
-  typing               0.0193
-  start                0.0178
-  like                 0.0177
-  yes                  0.0163
-  know                 0.0163
-  look                 0.0161
-  love                 0.0145
-  want                 0.0134
-  think                0.0133
+Topic 0 (Count: 9161):
+  te                   0.0261
+  ae                   0.0164
+  ee                   0.0163
+  yes                  0.0130
+  ane                  0.0122
+  like                 0.0119
+  one                  0.0115
+  would                0.0115
+  thet                 0.0113
+  vou                  0.0111
 
-Topic 1 (Count: 153):
-  flower               0.1140
-  black                0.0580
-  butterfly            0.0475
-  ring                 0.0464
-  beautiful            0.0451
-  box                  0.0404
-  look                 0.0389
-  color                0.0386
-  dress                0.0384
-  jean                 0.0368
+Topic 1 (Count: 3561):
+  smile                0.0341
+  typing               0.0285
+  start                0.0259
+  look                 0.0214
+  like                 0.0198
+  know                 0.0191
+  yes                  0.0190
+  love                 0.0183
+  laugh                0.0180
+  think                0.0174
 
-Topic 2 (Count: 87):
-  paul                 0.4647
-  eric                 0.2354
-  michael              0.1558
-  candy                0.0693
-  dare                 0.0659
-  pro                  0.0514
-  button               0.0470
-  broth                0.0463
-  pick                 0.0386
-  intoxicating         0.0325
+Topic 2 (Count: 328):
+  take                 0.0392
+  breath               0.0389
+  water                0.0381
+  dress                0.0320
+  black                0.0295
+  bathroom             0.0281
+  jean                 0.0274
+  clothes              0.0273
+  look                 0.0270
+  siniles              0.0261
 
-Topic 3 (Count: 56):
-  amd                  0.2414
-  ieee                 0.1838
-  remember             0.1474
-  hdve                 0.1225
-  apple                0.1059
-  soy                  0.0983
-  memory               0.0948
-  sdys                 0.0738
-  hds                  0.0675
-  hdd                  0.0675
+Topic 3 (Count: 280):
+  chocolate            0.0567
+  cream                0.0492
+  eat                  0.0417
+  sip                  0.0372
+  cooky                0.0362
+  coffee               0.0352
+  cake                 0.0342
+  like                 0.0340
+  ice                  0.0340
+  egg                  0.0330
 
-Topic 5 (Count: 52):
-  wal                  0.3968
-  ct                   0.2671
-  fl                   0.2671
-  cal                  0.2577
-  pa                   0.2537
-  ca                   0.2453
-  wa                   0.2019
-  20                   0.1062
-  bant                 0.0857
-  pags                 0.0857
+Topic 5 (Count: 152):
+  al                   0.3821
+  ie                   0.2047
+  ieee                 0.1202
+  op                   0.1031
+  internet             0.1002
+  eg                   0.0909
+  wien                 0.0909
+  flair                0.0663
+  prompt               0.0627
+  apple                0.0520
 
-Topic 7 (Count: 37):
-  cube                 0.2534
-  magic                0.2273
-  magnetic             0.2245
-  field                0.1476
-  magnet               0.1364
-  force                0.1288
-  ring                 0.0823
-  turn                 0.0804
-  tocontrol            0.0599
-  shiny                0.0577
+Topic 4 (Count: 117):
+  ring                 0.1343
+  diamond              0.0983
+  beautiful            0.0668
+  rainbow              0.0638
+  eye                  0.0578
+  red                  0.0518
+  color                0.0500
+  like                 0.0492
+  shape                0.0488
+  blue                 0.0481
 
-Topic 6 (Count: 29):
-  human                0.4777
-  person               0.2100
-  people               0.1462
-  many                 0.1212
-  meaning              0.0732
-  process              0.0665
-  described            0.0638
-  interesting          0.0586
-  though               0.0541
-  sometimes            0.0536
+Topic 7 (Count: 55):
+  human                0.4021
+  person               0.1940
+  word                 0.1710
+  people               0.1029
+  example              0.0933
+  organic              0.0808
+  5g                   0.0717
+  context              0.0699
+  please               0.0690
+  named                0.0639
 
 
 ================================================================================
 
 CHATBOT Top 8 Topics:
 
-Topic 0 (Count: 22608):
-  smile                0.0239
-  typing               0.0193
-  start                0.0178
-  like                 0.0177
-  yes                  0.0163
-  know                 0.0163
-  look                 0.0161
-  love                 0.0145
-  want                 0.0134
-  think                0.0133
+Topic 1 (Count: 13529):
+  smile                0.0341
+  typing               0.0285
+  start                0.0259
+  look                 0.0214
+  like                 0.0198
+  know                 0.0191
+  yes                  0.0190
+  love                 0.0183
+  laugh                0.0180
+  think                0.0174
 
-Topic 1 (Count: 344):
-  flower               0.1140
-  black                0.0580
-  butterfly            0.0475
-  ring                 0.0464
-  beautiful            0.0451
-  box                  0.0404
-  look                 0.0389
-  color                0.0386
-  dress                0.0384
-  jean                 0.0368
+Topic 0 (Count: 8544):
+  te                   0.0261
+  ae                   0.0164
+  ee                   0.0163
+  yes                  0.0130
+  ane                  0.0122
+  like                 0.0119
+  one                  0.0115
+  would                0.0115
+  thet                 0.0113
+  vou                  0.0111
 
-Topic 4 (Count: 83):
-  virus                0.1780
-  firewall             0.1515
-  protection           0.1470
-  update               0.1302
-  version              0.1154
-  background           0.1123
-  ui                   0.1050
-  screen               0.0840
-  changed              0.0733
-  flair                0.0729
+Topic 2 (Count: 481):
+  take                 0.0392
+  breath               0.0389
+  water                0.0381
+  dress                0.0320
+  black                0.0295
+  bathroom             0.0281
+  jean                 0.0274
+  clothes              0.0273
+  look                 0.0270
+  siniles              0.0261
 
-Topic 2 (Count: 69):
-  paul                 0.4647
-  eric                 0.2354
-  michael              0.1558
-  candy                0.0693
-  dare                 0.0659
-  pro                  0.0514
-  button               0.0470
-  broth                0.0463
-  pick                 0.0386
-  intoxicating         0.0325
+Topic 3 (Count: 458):
+  chocolate            0.0567
+  cream                0.0492
+  eat                  0.0417
+  sip                  0.0372
+  cooky                0.0362
+  coffee               0.0352
+  cake                 0.0342
+  like                 0.0340
+  ice                  0.0340
+  egg                  0.0330
 
-Topic 3 (Count: 67):
-  amd                  0.2414
-  ieee                 0.1838
-  remember             0.1474
-  hdve                 0.1225
-  apple                0.1059
-  soy                  0.0983
-  memory               0.0948
-  sdys                 0.0738
-  hds                  0.0675
-  hdd                  0.0675
+Topic 4 (Count: 152):
+  ring                 0.1343
+  diamond              0.0983
+  beautiful            0.0668
+  rainbow              0.0638
+  eye                  0.0578
+  red                  0.0518
+  color                0.0500
+  like                 0.0492
+  shape                0.0488
+  blue                 0.0481
 
-Topic 6 (Count: 38):
-  human                0.4777
-  person               0.2100
-  people               0.1462
-  many                 0.1212
-  meaning              0.0732
-  process              0.0665
-  described            0.0638
-  interesting          0.0586
-  though               0.0541
-  sometimes            0.0536
+Topic 5 (Count: 88):
+  al                   0.3821
+  ie                   0.2047
+  ieee                 0.1202
+  op                   0.1031
+  internet             0.1002
+  eg                   0.0909
+  wien                 0.0909
+  flair                0.0663
+  prompt               0.0627
+  apple                0.0520
 
-Topic 9 (Count: 35):
-  relationship         0.4142
-  status               0.4025
-  romantic             0.2282
-  change               0.2226
-  adult                0.2081
-  dating               0.1946
-  intimate             0.1882
-  access               0.1806
-  doesnt               0.1574
-  allow                0.1428
+Topic 6 (Count: 76):
+  box                  0.1533
+  gift                 0.1331
+  christmas            0.1109
+  wallet               0.0944
+  pillow               0.0683
+  interest             0.0622
+  calfskin             0.0607
+  amazon               0.0566
+  case                 0.0471
+  spend                0.0458
 
