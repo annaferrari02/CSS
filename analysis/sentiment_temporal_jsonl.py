@@ -7,7 +7,7 @@ pip install pandas numpy matplotlib seaborn scipy textblob vaderSentiment
 python -m textblob.download_corpora
 
 USO:
-python sentiment_temporal_jsonl.py
+python script.py
 """
 
 import pandas as pd
@@ -21,27 +21,27 @@ from textblob import TextBlob
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import warnings
 import os
-from pathlib import Path
 warnings.filterwarnings('ignore')
 
 # Setup
 vader = SentimentIntensityAnalyzer()
 sns.set_style("whitegrid")
 
-# ===== CONFIGURAZIONE PERCORSI =====
-# Directory base del progetto
-BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_DIR = BASE_DIR / "data"
-OUTPUT_DIR = BASE_DIR / 'output' / 'sentiment_analysis'
-
-# Crea directory di output se non esiste
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-# File da analizzare (nella directory reddit_data)
-FILES_TO_ANALYZE = [DATA_DIR / 'r_MyBoyfriendIsAI_comments.jsonl'
+# ===== CONFIGURAZIONE =====
+# Modifica questi percorsi secondo necessità
+FILES_TO_ANALYZE = [
+    r"C:\Users\walte\OneDrive\Desktop\CSS\r_MyBoyfriendIsAI_comments.jsonl",
+    r"C:\Users\walte\OneDrive\Desktop\CSS\r_MyBoyfriendIsAI_posts.jsonl",
+    
 ]
 
-MESI_DA_CONFRONTARE = [1, 3, 6]  # Confronta mese 1, 3 e 6
+MESI_DA_CONFRONTARE = [1, 12]  # Confronta primo mese vs primo anno
+
+# Date di eventi importanti (annunci modelli GPT)
+DATE_EVENTI = {
+    '2025-08-06': 'Annuncio GPT-5 (6 Agosto 2025)',
+    '2025-10-14': 'Annuncio GPT-Atlas (14 Ottobre 2025)'
+}
 
 
 # ===== CARICAMENTO DATI JSONL =====
@@ -50,9 +50,9 @@ def carica_jsonl(filepath, max_rows=None):
     Carica file JSONL (un JSON per riga)
     max_rows: limita numero righe (utile per test con file grandi)
     """
-    print(f"📂 Caricamento {filepath.name}...")
+    print(f"📂 Caricamento {filepath}...")
     
-    if not filepath.exists():
+    if not os.path.exists(filepath):
         print(f"   ❌ File non trovato: {filepath}")
         return None
     
@@ -162,7 +162,7 @@ def carica_multipli_file(filepaths, max_rows_per_file=None):
             if df is not None:
                 # Aggiungi info file come subreddit se mancante
                 if df['subreddit'].iloc[0] == 'unknown':
-                    subreddit_name = filepath.stem.replace('_comments', '').replace('_posts', '').replace('r_', '')
+                    subreddit_name = os.path.basename(filepath).replace('_comments.jsonl', '').replace('_posts.jsonl', '').replace('r_', '')
                     df['subreddit'] = subreddit_name
                 all_dfs.append(df)
     
@@ -204,10 +204,93 @@ def aggiungi_sentiment(df):
     
     print("   ✅ Sentiment calcolato")
     return df
+# ===== ANALISI EVENTI SPECIFICI =====
+def analisi_eventi_specifici(df, date_eventi):
+    """
+    Analizza sentiment in date specifiche (es. annunci modelli)
+    date_eventi: dict {'YYYY-MM-DD': 'Descrizione evento'}
+    """
+    print("\n📅 SENTIMENT IN DATE SPECIFICHE (EVENTI)\n")
+    
+    risultati = []
+    
+    for data_str, descrizione in date_eventi.items():
+        data_evento = pd.to_datetime(data_str)
+        
+        # Finestra: giorno prima, giorno dell'evento, giorno dopo
+        giorno_prima = data_evento - timedelta(days=1)
+        giorno_dopo = data_evento + timedelta(days=1)
+        
+        # Filtra commenti nella finestra
+        mask = (df['timestamp'] >= giorno_prima) & (df['timestamp'] <= giorno_dopo)
+        commenti_evento = df[mask]
+        
+        if len(commenti_evento) == 0:
+            print(f"⚠️  {descrizione} ({data_str}): Nessun commento trovato")
+            continue
+        
+        # Calcola metriche per ogni giorno
+        for offset in [-1, 0, 1]:
+            giorno = data_evento + timedelta(days=offset)
+            giorno_mask = df['timestamp'].dt.date == giorno.date()
+            commenti_giorno = df[giorno_mask]
+            
+            if len(commenti_giorno) > 0:
+                label = "Giorno prima" if offset == -1 else ("Evento" if offset == 0 else "Giorno dopo")
+                risultati.append({
+                    'evento': descrizione,
+                    'data': giorno.date(),
+                    'periodo': label,
+                    'n_commenti': len(commenti_giorno),
+                    'sentiment_mean': commenti_giorno['sentiment_compound'].mean(),
+                    'sentiment_std': commenti_giorno['sentiment_compound'].std(),
+                    'positive_pct': (commenti_giorno['sentiment_category'] == 'positive').sum() / len(commenti_giorno) * 100,
+                    'negative_pct': (commenti_giorno['sentiment_category'] == 'negative').sum() / len(commenti_giorno) * 100
+                })
+    
+    if risultati:
+        risultati_df = pd.DataFrame(risultati)
+        print(risultati_df.to_string(index=False))
+        return risultati_df
+    else:
+        print("⚠️  Nessun dato disponibile per le date specificate")
+        return None
+
+
+def analisi_tutti_mesi(df):
+    """
+    Analizza sentiment per TUTTI i mesi presenti nei dati
+    """
+    print("\n📅 SENTIMENT PER TUTTI I MESI\n")
+    
+    # Raggruppa per mese
+    df['mese_anno'] = df['timestamp'].dt.to_period('M')
+    
+    risultati = []
+    for mese in sorted(df['mese_anno'].unique()):
+        mese_df = df[df['mese_anno'] == mese]
+        
+        risultati.append({
+            'mese': str(mese),
+            'n_commenti': len(mese_df),
+            'sentiment_mean': mese_df['sentiment_compound'].mean(),
+            'sentiment_std': mese_df['sentiment_compound'].std(),
+            'positive_pct': (mese_df['sentiment_category'] == 'positive').sum() / len(mese_df) * 100,
+            'negative_pct': (mese_df['sentiment_category'] == 'negative').sum() / len(mese_df) * 100,
+            'neutral_pct': (mese_df['sentiment_category'] == 'neutral').sum() / len(mese_df) * 100,
+            'subjectivity': mese_df['sentiment_subjectivity'].mean()
+        })
+    
+    risultati_df = pd.DataFrame(risultati)
+    print(risultati_df.to_string(index=False))
+    
+    return risultati_df
+
+
 
 
 # ===== ANALISI TEMPORALE =====
-def confronto_periodi(df, mesi=[1, 3, 6]):
+def confronto_periodi(df, mesi=[1, 12]):
     """Confronta sentiment a distanze temporali"""
     print("\n📊 CONFRONTO TRA PERIODI TEMPORALI\n")
     
@@ -292,9 +375,88 @@ def plot_evoluzione_temporale(df):
     axes[2].grid(alpha=0.3, axis='y')
     
     plt.tight_layout()
-    output_path = OUTPUT_DIR / 'sentiment_evoluzione_temporale.png'
-    plt.savefig(output_path, dpi=300, bbox_inches='tight')
-    print(f"   ✅ Salvato: {output_path}")
+    plt.savefig('sentiment_evoluzione_temporale.png', dpi=300, bbox_inches='tight')
+    print("   ✅ Salvato: sentiment_evoluzione_temporale.png")
+    plt.close()
+
+def plot_eventi_specifici(eventi_df):
+    """Grafico sentiment attorno agli eventi"""
+    if eventi_df is None or len(eventi_df) == 0:
+        return
+    
+    eventi_unici = eventi_df['evento'].unique()
+    n_eventi = len(eventi_unici)
+    
+    fig, axes = plt.subplots(1, n_eventi, figsize=(7*n_eventi, 5))
+    if n_eventi == 1:
+        axes = [axes]
+    
+    for idx, evento in enumerate(eventi_unici):
+        evento_data = eventi_df[eventi_df['evento'] == evento]
+        
+        x_pos = [0, 1, 2]
+        colors = ['#87CEEB', '#FF6B6B', '#FFD93D']
+        
+        axes[idx].bar(x_pos, evento_data['sentiment_mean'].values, 
+                     color=colors, edgecolor='black', alpha=0.7)
+        axes[idx].axhline(y=0, color='gray', linestyle='--', alpha=0.5)
+        axes[idx].set_title(f'{evento.split("(")[0]}\nSentiment Attorno all\'Evento', 
+                           fontsize=12, fontweight='bold')
+        axes[idx].set_ylabel('Sentiment Compound')
+        axes[idx].set_xticks(x_pos)
+        axes[idx].set_xticklabels(evento_data['periodo'].values, rotation=0)
+        axes[idx].grid(alpha=0.3, axis='y')
+        
+        # Aggiungi valori sopra le barre
+        for i, (pos, val) in enumerate(zip(x_pos, evento_data['sentiment_mean'].values)):
+            axes[idx].text(pos, val + 0.02, f'{val:.3f}', 
+                          ha='center', fontsize=10, fontweight='bold')
+    
+    plt.tight_layout()
+    plt.savefig('sentiment_eventi_specifici.png', dpi=300, bbox_inches='tight')
+    print("   ✅ Salvato: sentiment_eventi_specifici.png")
+    plt.close()
+
+
+def plot_tutti_mesi(mesi_df):
+    """Grafico sentiment per tutti i mesi"""
+    fig, axes = plt.subplots(2, 1, figsize=(14, 10))
+    
+    # 1. Sentiment medio per mese
+    x_pos = range(len(mesi_df))
+    axes[0].plot(x_pos, mesi_df['sentiment_mean'].values, 
+                marker='o', linewidth=2, markersize=8, color='steelblue')
+    axes[0].axhline(y=0, color='gray', linestyle='--', alpha=0.5)
+    axes[0].set_title('Sentiment Medio per Mese (Tutti i Mesi)', 
+                     fontsize=14, fontweight='bold')
+    axes[0].set_ylabel('Sentiment Compound')
+    axes[0].set_xticks(x_pos)
+    axes[0].set_xticklabels(mesi_df['mese'].values, rotation=45, ha='right')
+    axes[0].grid(alpha=0.3)
+    
+    # 2. Distribuzione categorie per mese (bar stacked)
+    bottom_neutral = mesi_df['negative_pct'].values
+    bottom_positive = bottom_neutral + mesi_df['neutral_pct'].values
+    
+    axes[1].bar(x_pos, mesi_df['negative_pct'].values, 
+               label='Negative', color='#FF6B6B')
+    axes[1].bar(x_pos, mesi_df['neutral_pct'].values, 
+               bottom=bottom_neutral, label='Neutral', color='#FFD93D')
+    axes[1].bar(x_pos, mesi_df['positive_pct'].values, 
+               bottom=bottom_positive, label='Positive', color='#6BCB77')
+    
+    axes[1].set_title('Distribuzione Sentiment per Mese', 
+                     fontsize=14, fontweight='bold')
+    axes[1].set_ylabel('Percentuale')
+    axes[1].set_xlabel('Mese')
+    axes[1].set_xticks(x_pos)
+    axes[1].set_xticklabels(mesi_df['mese'].values, rotation=45, ha='right')
+    axes[1].legend(loc='upper right')
+    axes[1].grid(alpha=0.3, axis='y')
+    
+    plt.tight_layout()
+    plt.savefig('sentiment_tutti_mesi.png', dpi=300, bbox_inches='tight')
+    print("   ✅ Salvato: sentiment_tutti_mesi.png")
     plt.close()
 
 
@@ -325,42 +487,89 @@ def plot_confronto_periodi(risultati_df):
     axes[1].grid(alpha=0.3, axis='y')
     
     plt.tight_layout()
-    output_path = OUTPUT_DIR / 'sentiment_confronto_periodi.png'
-    plt.savefig(output_path, dpi=300, bbox_inches='tight')
-    print(f"   ✅ Salvato: {output_path}")
+    plt.savefig('sentiment_confronto_periodi.png', dpi=300, bbox_inches='tight')
+    print("   ✅ Salvato: sentiment_confronto_periodi.png")
     plt.close()
 
 
-def plot_per_subreddit(df):
-    """Confronto tra subreddit"""
-    if df['subreddit'].nunique() <= 1:
+def plot_eventi_specifici(eventi_df):
+    """Grafico sentiment attorno agli eventi"""
+    if eventi_df is None or len(eventi_df) == 0:
         return
     
-    fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+    eventi_unici = eventi_df['evento'].unique()
+    n_eventi = len(eventi_unici)
     
-    # Sentiment medio per subreddit
-    sub_sentiment = df.groupby('subreddit')['sentiment_compound'].mean().sort_values()
-    axes[0].barh(sub_sentiment.index, sub_sentiment.values, color='teal')
-    axes[0].axvline(x=0, color='gray', linestyle='--', alpha=0.5)
-    axes[0].set_title('Sentiment Medio per Subreddit', fontsize=14, fontweight='bold')
-    axes[0].set_xlabel('Sentiment Compound')
-    axes[0].grid(alpha=0.3, axis='x')
+    fig, axes = plt.subplots(1, n_eventi, figsize=(7*n_eventi, 5))
+    if n_eventi == 1:
+        axes = [axes]
     
-    # Distribuzione categorie per subreddit
-    sub_dist = df.groupby(['subreddit', 'sentiment_category']).size().unstack(fill_value=0)
-    sub_dist_pct = sub_dist.div(sub_dist.sum(axis=1), axis=0) * 100
-    sub_dist_pct.plot(kind='bar', stacked=True, ax=axes[1],
-                     color=['#FF6B6B', '#FFD93D', '#6BCB77'])
-    axes[1].set_title('Distribuzione Sentiment per Subreddit', fontsize=14, fontweight='bold')
-    axes[1].set_ylabel('Percentuale')
-    axes[1].set_xlabel('Subreddit')
-    axes[1].legend(title='Sentiment')
-    plt.setp(axes[1].xaxis.get_majorticklabels(), rotation=45, ha='right')
+    for idx, evento in enumerate(eventi_unici):
+        evento_data = eventi_df[eventi_df['evento'] == evento]
+        
+        x_pos = [0, 1, 2]
+        colors = ['#87CEEB', '#FF6B6B', '#FFD93D']
+        
+        axes[idx].bar(x_pos, evento_data['sentiment_mean'].values, 
+                     color=colors, edgecolor='black', alpha=0.7)
+        axes[idx].axhline(y=0, color='gray', linestyle='--', alpha=0.5)
+        axes[idx].set_title(f'{evento}\nSentiment Attorno all\'Evento', 
+                           fontsize=12, fontweight='bold')
+        axes[idx].set_ylabel('Sentiment Compound')
+        axes[idx].set_xticks(x_pos)
+        axes[idx].set_xticklabels(evento_data['periodo'].values, rotation=0)
+        axes[idx].grid(alpha=0.3, axis='y')
+        
+        # Aggiungi valori sopra le barre
+        for i, (pos, val) in enumerate(zip(x_pos, evento_data['sentiment_mean'].values)):
+            axes[idx].text(pos, val + 0.02, f'{val:.3f}', 
+                          ha='center', fontsize=10, fontweight='bold')
     
     plt.tight_layout()
-    output_path = OUTPUT_DIR / 'sentiment_per_subreddit.png'
-    plt.savefig(output_path, dpi=300, bbox_inches='tight')
-    print(f"   ✅ Salvato: {output_path}")
+    plt.savefig('sentiment_eventi_specifici.png', dpi=300, bbox_inches='tight')
+    print("   ✅ Salvato: sentiment_eventi_specifici.png")
+    plt.close()
+
+
+def plot_tutti_mesi(mesi_df):
+    """Grafico sentiment per tutti i mesi"""
+    fig, axes = plt.subplots(2, 1, figsize=(14, 10))
+    
+    # 1. Sentiment medio per mese
+    x_pos = range(len(mesi_df))
+    axes[0].plot(x_pos, mesi_df['sentiment_mean'].values, 
+                marker='o', linewidth=2, markersize=8, color='steelblue')
+    axes[0].axhline(y=0, color='gray', linestyle='--', alpha=0.5)
+    axes[0].set_title('Sentiment Medio per Mese (Tutti i Mesi)', 
+                     fontsize=14, fontweight='bold')
+    axes[0].set_ylabel('Sentiment Compound')
+    axes[0].set_xticks(x_pos)
+    axes[0].set_xticklabels(mesi_df['mese'].values, rotation=45, ha='right')
+    axes[0].grid(alpha=0.3)
+    
+    # 2. Distribuzione categorie per mese (bar stacked)
+    bottom_neutral = mesi_df['negative_pct'].values
+    bottom_positive = bottom_neutral + mesi_df['neutral_pct'].values
+    
+    axes[1].bar(x_pos, mesi_df['negative_pct'].values, 
+               label='Negative', color='#FF6B6B')
+    axes[1].bar(x_pos, mesi_df['neutral_pct'].values, 
+               bottom=bottom_neutral, label='Neutral', color='#FFD93D')
+    axes[1].bar(x_pos, mesi_df['positive_pct'].values, 
+               bottom=bottom_positive, label='Positive', color='#6BCB77')
+    
+    axes[1].set_title('Distribuzione Sentiment per Mese', 
+                     fontsize=14, fontweight='bold')
+    axes[1].set_ylabel('Percentuale')
+    axes[1].set_xlabel('Mese')
+    axes[1].set_xticks(x_pos)
+    axes[1].set_xticklabels(mesi_df['mese'].values, rotation=45, ha='right')
+    axes[1].legend(loc='upper right')
+    axes[1].grid(alpha=0.3, axis='y')
+    
+    plt.tight_layout()
+    plt.savefig('sentiment_tutti_mesi.png', dpi=300, bbox_inches='tight')
+    print("   ✅ Salvato: sentiment_tutti_mesi.png")
     plt.close()
 
 
@@ -385,23 +594,36 @@ def analisi_completa(files, mesi_confronto=[1, 3, 6], max_rows_test=None):
     # 2. Calcola sentiment
     df = aggiungi_sentiment(df)
     
-    # 3. Analisi temporale
+    # 3. Analisi tutti i mesi
+    mesi_df = analisi_tutti_mesi(df)
+
+    # 4. Confronto periodi
     risultati_periodi, periodi_dict = confronto_periodi(df, mesi=mesi_confronto)
-    
-    # 4. Visualizzazioni
+
+    # 5. Analisi eventi specifici
+    eventi_df = analisi_eventi_specifici(df, DATE_EVENTI)
+
+    # 6. Visualizzazioni
     print("\n📊 Generazione visualizzazioni...")
     plot_evoluzione_temporale(df)
-    plot_confronto_periodi(risultati_periodi)
+    #plot_confronto_periodi(risultati_periodi)
+    plot_tutti_mesi(mesi_df)
+    if eventi_df is not None:
+        plot_eventi_specifici(eventi_df)
     plot_per_subreddit(df)
     
-    # 5. Salva risultati
+    # 7. Salva risultati
     print("\n💾 Salvataggio risultati...")
-    csv_path1 = OUTPUT_DIR / 'sentiment_temporale_completo.csv'
-    csv_path2 = OUTPUT_DIR / 'confronto_periodi.csv'
-    df.to_csv(csv_path1, index=False)
-    risultati_periodi.to_csv(csv_path2, index=False)
-    print(f"   ✅ Salvato: {csv_path1}")
-    print(f"   ✅ Salvato: {csv_path2}")
+    df.to_csv('sentiment_temporale_completo.csv', index=False)
+    #risultati_periodi.to_csv('confronto_periodi.csv', index=False)
+    mesi_df.to_csv('sentiment_tutti_mesi.csv', index=False)
+    if eventi_df is not None:
+        eventi_df.to_csv('sentiment_eventi_specifici.csv', index=False)
+    print("   ✅ Salvato: sentiment_temporale_completo.csv")
+    print("   ✅ Salvato: confronto_periodi.csv")
+    print("   ✅ Salvato: sentiment_tutti_mesi.csv")
+    if eventi_df is not None:
+        print("   ✅ Salvato: sentiment_eventi_specifici.csv")
     
     # 6. Report finale
     print("\n" + "="*70)
@@ -410,7 +632,7 @@ def analisi_completa(files, mesi_confronto=[1, 3, 6], max_rows_test=None):
     
     print(f"\n📊 Commenti analizzati: {len(df):,}")
     print(f"📅 Periodo: {df['timestamp'].min().date()} → {df['timestamp'].max().date()}")
-    print(f"🏷️ Subreddit: {', '.join(df['subreddit'].unique())}")
+    print(f"🏷️  Subreddit: {', '.join(df['subreddit'].unique())}")
     
     print(f"\n📈 Sentiment medio globale: {df['sentiment_compound'].mean():.3f}")
     
@@ -429,41 +651,24 @@ def analisi_completa(files, mesi_confronto=[1, 3, 6], max_rows_test=None):
     
     print("\n✅ Analisi completata!\n")
     print("File generati:")
-    print(f"   - {csv_path1.name}")
-    print(f"   - {csv_path2.name}")
+    print("   - sentiment_temporale_completo.csv")
+    print("   - confronto_periodi.csv")
     print("   - sentiment_evoluzione_temporale.png")
-    print("   - sentiment_confronto_periodi.png")
     print("   - sentiment_per_subreddit.png")
-    print(f"\nTutti i file salvati in: {OUTPUT_DIR}")
     
     return df, risultati_periodi
 
 
 # ===== ESECUZIONE =====
 if __name__ == "__main__":
-    # Verifica che la directory dati esista
-    if not DATA_DIR.exists():
-        print(f"\n❌ ERRORE: Directory {DATA_DIR} non trovata!")
-        print(f"Crea la directory e inserisci i file JSONL dei subreddit.")
-        exit(1)
-    
-    # Verifica che esistano i file
-    files_esistenti = [f for f in FILES_TO_ANALYZE if f.exists()]
-    if not files_esistenti:
-        print(f"\n❌ ERRORE: Nessun file trovato in {DATA_DIR}")
-        print("File cercati:")
-        for f in FILES_TO_ANALYZE:
-            print(f"  - {f.name}")
-        exit(1)
-    
     # TEST MODE: carica solo 10000 righe per file per test veloce
     # Per analisi completa, usa max_rows_test=None
     
-    print("\n⚠️ MODALITÀ TEST: Caricamento solo prime 10000 righe per file")
+    print("\n⚠️  MODALITÀ TEST: Caricamento solo prime 10000 righe per file")
     print("Per analisi completa, modifica max_rows_test=None nella funzione sotto\n")
     
     df, periodi = analisi_completa(
-        files_esistenti,
+        FILES_TO_ANALYZE,
         mesi_confronto=MESI_DA_CONFRONTARE,
         max_rows_test=10000  # Cambia a None per analisi completa
     )
