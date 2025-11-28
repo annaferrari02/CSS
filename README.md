@@ -28,7 +28,7 @@ The project explores:
 ### 3. NSFW Content Analysis
 - DistilBERT-based NSFW classifier for binary content labeling
 - NLTK text preprocessing with normalization and lemmatization for input optimization
-- Message-level analysis for escalation patterns, temporal persistence metrics and conversational contamination quantification
+- Message-level analysis for escalation patterns, temporal persistence metrics, and conversational contamination quantification
 
 ## Prerequisites
 
