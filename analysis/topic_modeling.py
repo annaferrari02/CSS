@@ -111,11 +111,11 @@ def run_topic_modeling(data_path, output_dir=None):
 
 
 if __name__ == '__main__':
-    DATA_PATH = Path("data") / "human_ai_chatlogs.csv"
+    DATA_PATH = Path("data_cleaned") / "perspective_moderated_human_ai_chatlogs_cleaned.csv"
     
     # Fallback path
     if not DATA_PATH.exists():
-        DATA_PATH = Path("C:/Users/anna2/OneDrive/Desktop/CSS/data/human_ai_chatlogs.csv")
+        DATA_PATH = Path("C:/Users/anna2/OneDrive/Desktop/CSS/data_cleaned/perspective_moderated_human_ai_chatlogs_cleaned.csv")
         print(f"Using legacy path: {DATA_PATH}")
     
     if not DATA_PATH.exists():

@@ -18,8 +18,8 @@ import os
 from tqdm import tqdm
 
 # --- CONFIGURAZIONE ---
-INPUT_CSV = r"D:\VS CODE DIRECTORY\PYTHON\CSS\moderation\output\perspective_moderated_human_ai_chatlogs.csv"
-OUTPUT_CSV = r"D:\VS CODE DIRECTORY\PYTHON\CSS\moderation\output\chatlogs_cleaned.csv"
+INPUT_CSV = r"C:\Users\anna2\OneDrive\Desktop\CSS\data\human_ai_chatlogs.csv" #modified
+OUTPUT_CSV = r"C:\Users\anna2\OneDrive\Desktop\CSS\data" #modified 
 
 # Soglia di familiarità: se meno del 40% delle parole sono note, scartiamo il testo.
 # Puoi aggiustare questo valore dopo qualche test manuale.

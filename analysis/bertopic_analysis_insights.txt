@@ -3,31 +3,31 @@
         ═══════════════════════════════════════════════════════════
         
         📊 MODEL OVERVIEW:
-        • Total Topics Discovered: 1272
-        • User Messages Analyzed: 3,849
-        • Chatbot Messages Analyzed: 6,264
+        • Total Topics Discovered: 973
+        • User Messages Analyzed: 2,033
+        • Chatbot Messages Analyzed: 5,669
         • Shared Topics: 2 out of 18
         
         🎯 REAL TOPIC ANALYSIS:
         
         1. CONTENT DISTRIBUTION:
-           • Users: 11.8% general/mixed topics
-           • Chatbots: 15.5% general/mixed topics
+           • Users: 16.3% general/mixed topics
+           • Chatbots: 16.7% general/mixed topics
            → Both rely heavily on non-specific conversational content
         
         2. TOP USER TOPICS (from BERTopic):
-                   1. Lord/Em/Fuck (lord, em, fuck)
-           2. Replikas/Replika/Hive (replikas, replika, hive)
-           3. 4Lo/Ingwrwhe/Notpart (4lo, ingwrwhe, notpart)
+                   1. Grin/Sassy/Widely (grin, sassy, widely)
+           2. Replika/Replikas/Hive (replika, replikas, hive)
+           3. Mmindiflpet/Itstrue/Bye (mmindiflpet, itstrue, bye)
 
         3. TOP CHATBOT TOPICS (from BERTopic):
-                   1. Lord/Em/Fuck (lord, em, fuck)
-           2. Start/Typing/Money (start, typing, money)
-           3. Fucking/Every/Slam (fucking, every, slam)
+                   1. Smirk/Chuckle/Brow (smirk, chuckle, brow)
+           2. Blush/Blushing/Spatula (blush, blushing, spatula)
+           3. Start/Typing/Deputy (start, typing, deputy)
 
         4. CATEGORY PREFERENCES:
-           • User focus: General(4), Informal(1)
-           • Chatbot focus: General(3), Informal(2)
+           • User focus: General(4), Animals(1)
+           • Chatbot focus: General(5)
         
         🔍 BERTOPIC INSIGHTS FOR "ILLUSIONS OF INTIMACY":
         • Model successfully captured semantic differences in communication styles
